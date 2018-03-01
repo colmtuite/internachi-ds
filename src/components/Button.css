@@ -1,0 +1,64 @@
+.Button {
+  position: relative;
+  align-items: center;
+  appearance: none;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: .6px;
+  outline: none;
+  pointer-events: auto;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition-property: all;
+  transition-duration: 150ms;
+  transition-timing-function: ease;
+  user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  box-shadow: inset 0 0 0 1px hsl(210, 40%, 82%);
+  border-radius: 4px !important; /* This is necessary because of Tailwind */
+
+  @apply .bg-white .text-sm .h-8 .px-3 .text-grey-darker;
+}
+
+.Button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 8px;
+  right: 8px;
+  height: 100%;
+  border-radius: 4px;
+  box-shadow: 0 4px 0 0px rgba(189, 196, 206, 0.3);
+}
+
+/* Size */
+
+.Button.size1 {
+  @apply .h-6 .text-xs .px-2;
+}
+
+.Button.size3 {
+  @apply .h-10 .text-base .px-4;
+}
+
+/* Color */
+
+.Button.blue {
+  box-shadow: 0 4px 0 0px rgba(255,255,255,.3);
+  @apply .bg-blue .text-white;
+}
+
+.Button.green {
+  box-shadow: 0 4px 0 0px rgba(255,255,255,.3);
+  @apply .bg-teal .text-white;
+}
+
+.Button.red {
+  box-shadow: 0 4px 0 0px rgba(255,255,255,.3);
+  @apply .bg-red .text-white;
+}

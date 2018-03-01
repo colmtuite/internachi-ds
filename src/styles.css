@@ -1,3 +1,8 @@
+@import "components/Badge.css";
+@import "components/Button.css";
+/* @import "components/Input.css"; */
+/* @import "components/Heading.css"; */
+/* @import "components/Text.css"; */
+/* @import "components/Progress.css"; */
 @tailwind preflight;
-
 @tailwind utilities;

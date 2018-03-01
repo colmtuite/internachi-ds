@@ -1,0 +1,37 @@
+.Badge {
+  display: inline-flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 9999px;
+  letter-spacing: .042em;
+  white-space: nowrap;
+  user-select: none;
+  vertical-align: middle;
+  cursor: default;
+  @apply .bg-grey-light .text-2xs .h-4 .px-2 .text-grey-darker;
+}
+
+/* Size */
+
+.Badge.size2 {
+  @apply .h-6 .text-xs .px-3;
+}
+
+/* Color */
+
+.Badge.blue {
+  @apply .bg-blue-lighter .text-blue-darker;
+}
+
+.Badge.red {
+  @apply .bg-red-lighter .text-red-darker;
+}
+
+.Badge.green {
+  @apply .bg-teal-lighter .text-teal-darker;
+}
+
+.Badge.yellow {
+  @apply .bg-yellow-lighter .text-yellow-darker;
+}
