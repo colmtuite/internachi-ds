@@ -46,7 +46,9 @@ let defaultConfig = require('tailwindcss/defaultConfig')()
 let colors = {
   'transparent': 'transparent',
 
+  'white': '#ffffff',
   'black': '#22292f',
+
   'grey-darkest': '#3d4852',
   'grey-darker': '#606f7b',
   'grey-dark': '#8795a1',
@@ -54,7 +56,6 @@ let colors = {
   'grey-light': '#dae1e7',
   'grey-lighter': '#f1f5f8',
   'grey-lightest': '#f8fafc',
-  'white': '#ffffff',
 
   'red-darkest': '#3b0d0c',
   'red-darker': '#621b18',
@@ -142,6 +143,8 @@ module.exports = {
 
   fonts: {
     'sans': [
+      'Gotham Narrow SSm A',
+      'Gotham Narrow SSm B',
       '-apple-system',
       'BlinkMacSystemFont',
       'Segoe UI',
@@ -154,18 +157,6 @@ module.exports = {
       'Helvetica Neue',
       'sans-serif',
     ],
-    'serif': [
-      'Constantia',
-      'Lucida Bright',
-      'Lucidabright',
-      'Lucida Serif',
-      'Lucida',
-      'DejaVu Serif',
-      'Bitstream Vera Serif',
-      'Liberation Serif',
-      'Georgia',
-      'serif',
-    ],
     'mono': [
       'Menlo',
       'Monaco',
@@ -177,41 +168,44 @@ module.exports = {
   },
 
   textSizes: {
-    '2xs': '.625rem',     // 10px
-    'xs': '.75rem',     // 12px
-    'sm': '.875rem',    // 14px
-    'base': '1rem',     // 16px
-    'lg': '1.125rem',   // 18px
-    'xl': '1.25rem',    // 20px
-    '2xl': '1.5rem',    // 24px
-    '3xl': '1.875rem',  // 30px
-    '4xl': '2.25rem',   // 36px
-    '5xl': '3rem',      // 48px
+    '1': '.625rem',     // 10px
+    '2': '.75rem',     // 12px
+    '3': '.875rem',    // 14px
+    '4': '1rem',     // 16px
+    '5': '1.125rem',   // 18px
+    '6': '1.25rem',    // 20px
+    '7': '1.5rem',    // 24px
+    '8': '2.125rem',  // 34px
+    '9': '2.75rem',      // 44px
+    '10': '4rem',      // 64px
   },
 
   fontWeights: {
-    'hairline': 100,
-    'thin': 200,
+    'thin': 100,
+    'ultralight': 200,
     'light': 300,
     'normal': 400,
     'medium': 500,
     'semibold': 600,
     'bold': 700,
-    'extrabold': 800,
+    'ultrabold': 800,
     'black': 900,
   },
 
   leading: {
-    'none': 1,
-    'tight': 1.25,
-    'normal': 1.5,
-    'loose': 2,
+    '0': 1,
+    '1': 1.15,
+    '2': 1.25,
+    '3': 1.5,
+    '4': 1.75,
   },
 
   tracking: {
-    'tight': '-0.05em',
-    'normal': '0',
-    'wide': '0.05em',
+    '02': '-.04em',
+    '01': '-.02em',
+    '0': '0',
+    '1': '.05em',
+    '2': '.1em',
   },
 
   textColors: colors,
@@ -229,11 +223,12 @@ module.exports = {
   borderColors: Object.assign({ default: colors['grey-light'] }, colors),
 
   borderRadius: {
-    'none': '0',
-    'sm': '.125rem',
-    default: '.25rem',
-    'lg': '.5rem',
-    'full': '9999px',
+    '0': '0',
+    '1': '.125rem',
+    '2': '.25rem',
+    '3': '.5rem',
+    'pill': '9999px',
+    'round': '50%',
   },
 
   width: {
@@ -299,6 +294,7 @@ module.exports = {
   },
 
   maxWidth: {
+    'auto': 'auto',
     'xs': '20rem',
     'sm': '30rem',
     'md': '40rem',
@@ -308,6 +304,17 @@ module.exports = {
     '3xl': '80rem',
     '4xl': '90rem',
     '5xl': '100rem',
+    '1/2': '50%',
+    '1/3': '33.33333%',
+    '2/3': '66.66667%',
+    '1/4': '25%',
+    '3/4': '75%',
+    '1/5': '20%',
+    '2/5': '40%',
+    '3/5': '60%',
+    '4/5': '80%',
+    '1/6': '16.66667%',
+    '5/6': '83.33333%',
     'full': '100%',
   },
 
@@ -317,37 +324,43 @@ module.exports = {
   },
 
   padding: {
-    'px': '1px',
     '0': '0',
-    '1': '0.25rem',
-    '2': '0.5rem',
-    '3': '0.75rem',
-    '4': '1rem',
-    '6': '1.5rem',
-    '8': '2rem',
+    '1': '.5rem',
+    '2': '1rem',
+    '3': '1.5rem',
+    '4': '2rem',
+    '5': '2.5rem',
+    '6': '3rem',
+    '7': '3.5rem',
+    '8': '4rem',
+    '9': '5rem',
   },
 
   margin: {
     'auto': 'auto',
-    'px': '1px',
     '0': '0',
-    '1': '0.25rem',
-    '2': '0.5rem',
-    '3': '0.75rem',
-    '4': '1rem',
-    '6': '1.5rem',
-    '8': '2rem',
+    '1': '.5rem',
+    '2': '1rem',
+    '3': '1.5rem',
+    '4': '2rem',
+    '5': '2.5rem',
+    '6': '3rem',
+    '7': '3.5rem',
+    '8': '4rem',
+    '9': '5rem',
   },
 
   negativeMargin: {
-    'px': '1px',
     '0': '0',
-    '1': '0.25rem',
-    '2': '0.5rem',
-    '3': '0.75rem',
-    '4': '1rem',
-    '6': '1.5rem',
-    '8': '2rem',
+    '1': '.5rem',
+    '2': '1rem',
+    '3': '1.5rem',
+    '4': '2rem',
+    '5': '2.5rem',
+    '6': '3rem',
+    '7': '3.5rem',
+    '8': '4rem',
+    '9': '5rem',
   },
 
   shadows: {
@@ -361,11 +374,15 @@ module.exports = {
   zIndex: {
     'auto': 'auto',
     '0': 0,
-    '10': 10,
-    '20': 20,
-    '30': 30,
-    '40': 40,
-    '50': 50,
+    '100': 100,
+    '200': 200,
+    '300': 300,
+    '400': 400,
+    '500': 500,
+    '600': 600,
+    '700': 700,
+    '800': 800,
+    '900': 900,
   },
 
   opacity: {

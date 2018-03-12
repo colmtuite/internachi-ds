@@ -1,0 +1,27 @@
+.Card {
+    background-color: white;
+    border: 1px solid config('colors.grey-light');
+    @apply .rounded-2;
+}
+
+/* Perspective */
+
+.Card.raised {
+    box-shadow: 0 5px 15px rgba(0,0,0,.05);
+}
+
+/* Interaction */
+
+.Card.interactive {
+    transition-property: box-shadow border-color;
+    transition-duration: 100ms;
+    transition-timing-function: ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,.05);
+}
+.Card.interactive:hover {
+    box-shadow: 0 10px 25px rgba(0,0,0,.05);
+    border-color: config('colors.grey');
+}
+.Card.interactive:active {
+    box-shadow: 0 1px 3px rgba(0,0,0,.05);
+}

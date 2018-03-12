@@ -1,0 +1,58 @@
+.Checkbox {
+    position: relative;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.Checkbox > input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.Checkbox > input ~ div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: config('colors.grey');
+    transition: all 100ms ease;
+    @apply .text-white .w-4 .h-4 .bg-white .rounded-1;
+}
+
+/* Hover state*/
+
+.Checkbox:hover > input ~ div {
+    border-color: config('colors.blue');
+}
+
+/* Focus state*/
+
+.Checkbox input:focus ~ div {
+    outline: 1px dashed config('colors.blue');
+    outline-offset: 1px;
+}
+
+
+/* Checked state */
+
+.Checkbox > input:checked ~ div {
+    border-color: config('colors.blue');
+    @apply .bg-blue;
+}
+
+.Checkbox > input:checked ~ div:after {
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    box-sizing: border-box;
+    content: '';
+    height: 10px;
+    left: 6px;
+    position: absolute;
+    top: 2px;
+    transform: rotate(45deg);
+    width: 5px;
+}

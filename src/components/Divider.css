@@ -1,0 +1,22 @@
+/* Default */
+
+.Divider {
+    height: 2px;
+    @apply .w-10 .bg-grey-light;
+}
+
+/* Sizes */
+
+.Divider.size1 {
+    @apply .w-10;
+}
+
+.Divider.size2 {
+    @apply .w-16;
+}
+
+/* Variations */
+
+.Divider.vertical {
+    @apply .w-px .h-4;
+}

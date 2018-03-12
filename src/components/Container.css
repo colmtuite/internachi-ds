@@ -1,0 +1,97 @@
+/* Default styles */
+
+.Container {
+    @apply w-5/6 ml-auto mr-auto;
+}
+
+/* Sizes */
+
+.Container.size1 {
+    @apply max-w-auto;
+}
+
+.Container.size2 {
+    @apply max-w-3/4;
+}
+
+.Container.size3 {
+    @apply max-w-1/2;
+}
+
+.Container.size4 {
+    @apply max-w-1/3;
+}
+
+/* Responsive sizes */
+
+@media only screen and (min-width: config('screens.sm')) {
+  .Container.sm-size1 {
+      @apply max-w-auto;
+  }
+
+  .Container.sm-size2 {
+      @apply max-w-3/4;
+  }
+
+  .Container.sm-size3 {
+      @apply max-w-1/2;
+  }
+
+  .Container.sm-size4 {
+      @apply max-w-1/3;
+  }
+}
+
+@media only screen and (min-width: config('screens.md')) {
+  .Container.md-size1 {
+      @apply max-w-auto;
+  }
+
+  .Container.md-size2 {
+      @apply max-w-3/4;
+  }
+
+  .Container.md-size3 {
+      @apply max-w-1/2;
+  }
+
+  .Container.md-size4 {
+      @apply max-w-1/3;
+  }
+}
+
+@media only screen and (min-width: config('screens.lg')) {
+  .Container.lg-size1 {
+      @apply max-w-auto;
+  }
+
+  .Container.lg-size2 {
+      @apply max-w-3/4;
+  }
+
+  .Container.lg-size3 {
+      @apply max-w-1/2;
+  }
+
+  .Container.lg-size4 {
+      @apply max-w-1/3;
+  }
+}
+
+@media only screen and (min-width: config('screens.xl')) {
+  .Container.xl-size1 {
+      @apply max-w-auto;
+  }
+
+  .Container.xl-size2 {
+      @apply max-w-3/4;
+  }
+
+  .Container.xl-size3 {
+      @apply max-w-1/2;
+  }
+
+  .Container.xl-size4 {
+      @apply max-w-1/3;
+  }
+}

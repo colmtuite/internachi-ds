@@ -1,8 +1,37 @@
+/* Tailwind base */
+
+@import "preflight.css";
+
+/* Custom components */
+
 @import "components/Badge.css";
 @import "components/Button.css";
+@import "components/Section.css";
+@import "components/Container.css";
+@import "components/Switch.css";
+@import "components/Header.css";
+@import "components/Divider.css";
+@import "components/Card.css";
+@import "components/Heading.css";
+@import "components/Text.css";
+@import "components/Title.css";
+@import "components/Avatar.css";
+@import "components/Progress.css";
+@import "components/Checkbox.css";
+@import "components/Radio.css";
 /* @import "components/Input.css"; */
-/* @import "components/Heading.css"; */
-/* @import "components/Text.css"; */
-/* @import "components/Progress.css"; */
-@tailwind preflight;
-@tailwind utilities;
+/* @import "components/Select.css"; */
+/* @import "components/Tab.css"; */
+/* @import "components/Link.css"; */
+/* @import "components/ListItem.css"; */
+/* @import "components/Table.css"; */
+
+/* @import "components/MegaMenu.css"; */
+/* @import "components/Dropdown.css"; */
+@import "components/Overlay.css";
+
+/* @import "components/Grid.css"; */
+
+/* Tailwind utilities */
+
+@import "utilities.css";

@@ -1,68 +1,307 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>Tailwind Starter Template</title>
+    <title>InterNACHI Design System</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6135554/7451592/css/fonts.css" />
     <link rel="stylesheet" href="./dist/styles.css">
   </head>
-  <body class="font-sans leading-none">
+  <body class="font-sans text-black leading-0" style="padding-top: 52px;">
 
-    <div class="min-h-screen flex flex-col items-center justify-center">
-      <div class="flex mb-8">
-        <span class="Badge">Badge</span>
+    <header class="Header sticky">
+      <div class="Container size2">
+        <input type="text" name="" value="">
+        wefew
       </div>
-      <div class="flex items-center mb-8">
-        <div class="ml-4 mr-4">
-          <span class="Badge">Size 1</span>
-        </div>
-        <div class="ml-4 mr-4">
-          <span class="Badge size2">Size 2</span>
-        </div>
-      </div>
-      <div class="flex items-center mb-8">
-        <div class="ml-4 mr-4">
-          <span class="Badge blue">Blue</span>
-        </div>
-        <div class="ml-4 mr-4">
-          <span class="Badge yellow">Yellow</span>
-        </div>
-        <div class="ml-4 mr-4">
-          <span class="Badge green">Green</span>
-        </div>
-        <div class="ml-4 mr-4">
-          <span class="Badge red">Red</span>
-        </div>
-      </div>
+    </header>
+
+    <section class="Section size1 bg-pink">
+      This is a Section component. Size 1. Use it for breaking marketing site content up into sections.
+    </section>
+
+    <section class="Section size2 bg-red">
+      This is a Section component. Size 2. Use it for breaking marketing site content up into sections.
+    </section>
+
+    <section class="Section size3 bg-purple">
+      This is a Section component. Size 3. Use it for breaking marketing site content up into sections.
+    </section>
+
+    <div class="flex justify-center py-4">
+      <div class="Divider"></div>
+    </div>
+    <div class="flex justify-center my-4">
+      <div class="Divider size2"></div>
+    </div>
+    <div class="flex justify-center py-4">
+      <div class="Divider vertical"></div>
     </div>
 
-    <div class="min-h-screen flex flex-col items-center justify-center">
-      <div class="flex mb-8">
-        <button class="Button" type="button">Button</button>
-      </div>
-      <div class="flex items-center mb-8">
-        <div class="ml-4 mr-4">
-          <button class="Button size1" type="button">Size 1</button>
-        </div>
-        <div class="ml-4 mr-4">
-          <button class="Button" type="button">Size2</button>
-        </div>
-        <div class="ml-4 mr-4">
-          <button class="Button size3" type="button">Size3</button>
+    <section class="Section size1">
+      <div class="Container size1">
+        <div class="bg-pink py-4">
+          This is a Container component. Size 1. For restricting the width of site content.
         </div>
       </div>
-      <div class="flex items-center mb-8">
-        <div class="ml-4 mr-4">
-          <button class="Button blue" type="button">Blue</button>
-        </div>
-        <div class="ml-4 mr-4">
-          <button class="Button green" type="button">Green</button>
-        </div>
-        <div class="ml-4 mr-4">
-          <button class="Button red" type="button">Red</button>
+    </section>
+
+    <section class="Section size1">
+      <div class="Container size2">
+        <div class="bg-pink py-4">
+          This is a Container component. Size 2. For restricting the width of site content.
         </div>
       </div>
-    </div>
+    </section>
+
+    <section class="Section size1">
+      <div class="Container size3">
+        <div class="bg-pink py-4">
+          This is a Container component. Size 3. For restricting the width of site content.
+        </div>
+      </div>
+    </section>
+
+    <section class="Section size1">
+      <div class="Container size4">
+        <div class="bg-pink py-4">
+          This is a Container component. Size 4. For restricting the width of site content.
+        </div>
+      </div>
+    </section>
+
+    <section class="Section md-size3">
+      <div class="Container">
+        <div class="flex flex-col items-center">
+          <div class="flex mb-8">
+            <span class="Badge">Badge</span>
+          </div>
+          <div class="flex items-center mb-8">
+            <div class="ml-4 mr-2">
+              <span class="Badge">Size 1</span>
+            </div>
+            <div class="ml-4 mr-2">
+              <span class="Badge size2">Size 2</span>
+            </div>
+          </div>
+          <div class="flex items-center mb-8">
+            <div class="ml-4 mr-2">
+              <span class="Badge blue">Blue</span>
+            </div>
+            <div class="ml-4 mr-2">
+              <span class="Badge yellow">Yellow</span>
+            </div>
+            <div class="ml-4 mr-2">
+              <span class="Badge green">Green</span>
+            </div>
+            <div class="ml-4 mr-2">
+              <span class="Badge red">Red</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Section md-size3">
+      <div class="flex flex-col items-center justify-center">
+        <div class="flex mb-8">
+          <button class="Button" type="button">Default</button>
+        </div>
+        <div class="flex items-center mb-8">
+          <div class="ml-4 mr-2">
+            <button class="Button size1" type="button">Size 1</button>
+          </div>
+          <div class="ml-4 mr-2">
+            <button class="Button" type="button">Size 2</button>
+          </div>
+          <div class="ml-4 mr-2">
+            <button class="Button size3" type="button">Size 3</button>
+          </div>
+        </div>
+        <div class="flex items-center mb-8">
+          <div class="ml-4 mr-2">
+            <button class="Button blue" type="button">Blue button</button>
+          </div>
+          <div class="ml-4 mr-2">
+            <button class="Button green" type="button">Green button</button>
+          </div>
+          <div class="ml-4 mr-2">
+            <button class="Button red" type="button">Red button</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Section size3">
+      <div class="Container size3">
+        <div class="Card p-4 mb-4">
+          Default card
+        </div>
+        <div class="Card raised p-4 mb-4">
+          Raised card for emphasising important content
+        </div>
+        <a href="#">
+          <div class="Card interactive p-4">
+            Interactive card for links
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="Section md-size3">
+      <div class="Container size4">
+        <h5 class="Heading size6 mb-2">Heading 6</h5>
+        <h5 class="Heading size5 mb-2">Heading 5</h5>
+        <h5 class="Heading size4 mb-2">Heading 4</h5>
+        <h5 class="Heading size3 mb-2">Heading 3</h5>
+        <h5 class="Heading size2 mb-2">Heading 2</h5>
+        <h5 class="Heading size1">Heading 1</h5>
+      </div>
+    </section>
+
+    <section class="Section md-size3">
+      <div class="Container size4">
+        <p class="Text size6 leading-3 mb-2">If you use the HOC pattern for React components, you may have found "refs" difficult to work with. You may have tried workarounds like proxying methods or special ref props (e.g. "innerRef").</p>
+        <p class="Text size5 leading-3 mb-2">If you use the HOC pattern for React components, you may have found "refs" difficult to work with. You may have tried workarounds like proxying methods or special ref props (e.g. "innerRef").</p>
+        <p class="Text size4 leading-3 mb-2">If you use the HOC pattern for React components, you may have found "refs" difficult to work with. You may have tried workarounds like proxying methods or special ref props (e.g. "innerRef").</p>
+        <p class="Text size3 leading-3 mb-2">If you use the HOC pattern for React components, you may have found "refs" difficult to work with. You may have tried workarounds like proxying methods or special ref props (e.g. "innerRef").</p>
+        <p class="Text size2 leading-3 mb-2">If you use the HOC pattern for React components, you may have found "refs" difficult to work with. You may have tried workarounds like proxying methods or special ref props (e.g. "innerRef").</p>
+        <p class="Text size1 leading-3 mb-2">If you use the HOC pattern for React components, you may have found "refs" difficult to work with. You may have tried workarounds like proxying methods or special ref props (e.g. "innerRef").</p>
+      </div>
+    </section>
+
+    <section class="Section md-size3">
+      <div class="Container size4">
+        <h3 class="Title size3 text-blue mb-2">Title Three</h3>
+        <h3 class="Title size2 text-pink mb-2">Default Title</h3>
+        <h3 class="Title size1 text-purple mb-2">Title One</h3>
+      </div>
+    </section>
+
+    <section class="Section md-size3">
+      <div class="Container size4">
+        <div class="flex items-center">
+          <div class="Avatar size1 ml-2">
+            C
+          </div>
+          <div class="Avatar size2 ml-2">
+            C
+          </div>
+          <div class="Avatar size3 ml-2">
+            C
+          </div>
+          <div class="Avatar size4 ml-2">
+            C
+          </div>
+          <div class="Avatar size5 ml-2">
+            C
+          </div>
+          <div class="Avatar size6 ml-2">
+            C
+          </div>
+        </div>
+        <div class="flex items-center pt-4">
+          <div class="Avatar">
+            C
+          </div>
+          <div class="Avatar grouped">
+            C
+          </div>
+          <div class="Avatar grouped">
+            C
+          </div>
+          <div class="Avatar grouped">
+            C
+          </div>
+          <div class="Avatar grouped">
+            C
+          </div>
+          <div class="Avatar grouped">
+            C
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Section md-size3">
+      <div class="Container size4">
+        <div class="mb-4">
+          <div class="Progress size1">
+            <div role="progressbar" style="width:50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+        <div class="Progress size2 green">
+          <div role="progressbar" style="width:50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <div class="Overlay is-active"></div> -->
+
+    <section class="Section md-size3">
+      <div class="flex flex-col items-center justify-center">
+        <div class="flex items-center">
+          <div class="ml-4">
+            <label class="Switch">
+              <input type="checkbox">
+              <div></div>
+            </label>
+          </div>
+          <div class="ml-4">
+            <label class="Switch is-disabled">
+              <input type="checkbox">
+              <div></div>
+            </label>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Section md-size3">
+      <div class="Container size4">
+        <div class="mb-2">
+          <label class="Checkbox">
+            <input type="checkbox" name="checkbox_group">
+            <div></div>
+            <span class="Text size3 ml-2">
+              Checkbox label
+            </span>
+          </label>
+        </div>
+        <div class="mb-4">
+          <label class="Checkbox">
+            <input type="checkbox" name="checkbox_group" checked>
+            <div></div>
+            <span class="Text size3 ml-2">
+              Checkbox label
+            </span>
+          </label>
+        </div>
+      </div>
+    </section>
+
+    <section class="Section md-size3">
+      <div class="Container size4">
+        <div class="mb-2">
+          <label class="Radio">
+            <input type="radio" name="radio_group">
+            <div></div>
+            <span class="Text size3 ml-2">
+              Radio label
+            </span>
+          </label>
+        </div>
+        <div class="mb-4">
+          <label class="Radio">
+            <input type="radio" name="radio_group" checked>
+            <div></div>
+            <span class="Text size3 ml-2">
+              Radio label
+            </span>
+          </label>
+        </div>
+      </div>
+    </section>
 
   </body>
 </html>

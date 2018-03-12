@@ -1,3 +1,5 @@
+/* Default styles */
+
 .Badge {
   display: inline-flex;
   align-items: center;
@@ -9,16 +11,62 @@
   user-select: none;
   vertical-align: middle;
   cursor: default;
-  @apply .bg-grey-light .text-2xs .h-4 .px-2 .text-grey-darker;
+  @apply .bg-grey-light .text-1 .h-4 .px-1 .text-grey-darker;
 }
 
-/* Size */
+/* Sizes */
+
+.Badge.size1 {
+  @apply .text-1 .h-4 .px-1;
+}
 
 .Badge.size2 {
-  @apply .h-6 .text-xs .px-3;
+  @apply .h-6 .text-2 .px-2;
 }
 
-/* Color */
+/* Responsive sizes */
+
+@media only screen and (min-width: config('screens.sm')) {
+  .Badge.sm-size1 {
+    @apply .text-1 .h-4 .px-1;
+  }
+
+  .Badge.sm-size2 {
+    @apply .h-6 .text-2 .px-2;
+  }
+}
+
+@media only screen and (min-width: config('screens.md')) {
+  .Badge.md-size1 {
+    @apply .text-1 .h-4 .px-1;
+  }
+
+  .Badge.md-size2 {
+    @apply .h-6 .text-2 .px-2;
+  }
+}
+
+@media only screen and (min-width: config('screens.lg')) {
+  .Badge.lg-size1 {
+    @apply .text-1 .h-4 .px-1;
+  }
+
+  .Badge.lg-size2 {
+    @apply .h-6 .text-2 .px-2;
+  }
+}
+
+@media only screen and (min-width: config('screens.xl')) {
+  .Badge.xl-size1 {
+    @apply .text-1 .h-4 .px-1;
+  }
+
+  .Badge.xl-size2 {
+    @apply .h-6 .text-2 .px-2;
+  }
+}
+
+/* Colors */
 
 .Badge.blue {
   @apply .bg-blue-lighter .text-blue-darker;

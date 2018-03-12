@@ -1,0 +1,77 @@
+/* Default styles */
+
+.Section {
+    @apply .pt-5 .pb-5;
+}
+
+/* Sizes */
+
+.Section.size1 {
+    @apply .pt-2 .pb-2;
+}
+
+.Section.size2 {
+    @apply .pt-5 .pb-5;
+}
+
+.Section.size3 {
+    @apply .pt-9 .pb-9;
+}
+
+/* Responsive sizes */
+
+@media only screen and (min-width: config('screens.sm')) {
+    .Section.sm-size1 {
+        @apply .pt-2 .pb-2;
+    }
+
+    .Section.sm-size2 {
+        @apply .pt-5 .pb-5;
+    }
+
+    .Section.sm-size3 {
+        @apply .pt-9 .pb-9;
+    }
+}
+
+@media only screen and (min-width: config('screens.md')) {
+    .Section.md-size1 {
+        @apply .pt-2 .pb-2;
+    }
+
+    .Section.md-size2 {
+        @apply .pt-5 .pb-5;
+    }
+
+    .Section.md-size3 {
+        @apply .pt-9 .pb-9;
+    }
+}
+
+@media only screen and (min-width: config('screens.lg')) {
+    .Section.lg-size1 {
+        @apply .pt-2 .pb-2;
+    }
+
+    .Section.lg-size2 {
+        @apply .pt-5 .pb-5;
+    }
+
+    .Section.lg-size3 {
+        @apply .pt-9 .pb-9;
+    }
+}
+
+@media only screen and (min-width: config('screens.xl')) {
+    .Section.xl-size1 {
+        @apply .pt-2 .pb-2;
+    }
+
+    .Section.xl-size2 {
+        @apply .pt-5 .pb-5;
+    }
+
+    .Section.xl-size3 {
+        @apply .pt-9 .pb-9;
+    }
+}

@@ -1,0 +1,49 @@
+.Radio {
+    position: relative;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.Radio > input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.Radio > input ~ div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: config('colors.grey');
+    transition: all 100ms ease;
+    @apply .w-4 .h-4 .bg-white .rounded-2;
+}
+
+/* Hover state*/
+
+.Radio:hover > input ~ div {
+    border-color: config('colors.blue');
+}
+
+/* Focus state */
+
+.Radio input:focus ~ div {
+    outline: 1px dashed config('colors.blue');
+    outline-offset: 1px;
+}
+
+/* Checked state */
+
+.Radio > input:checked ~ div {
+    border-color: config('colors.blue');
+    box-shadow: inset 0 0 0 4px config('colors.blue');
+    @apply .bg-white;
+}
+
+.Radio input ~ div {
+    @apply .rounded-round;
+}

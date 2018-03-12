@@ -1,0 +1,147 @@
+/* Default */
+
+.Text {
+  @apply .text-4;
+}
+
+/* Sizes */
+
+.Text.size1 {
+  letter-spacing: .014em;
+  @apply .text-1;
+}
+
+.Text.size2 {
+  letter-spacing: .008em;
+  @apply .text-2;
+}
+
+.Text.size3 {
+  @apply .text-3;
+}
+
+.Text.size4 {
+  @apply .text-4;
+}
+
+.Text.size5 {
+  @apply .text-5;
+}
+
+.Text.size6 {
+  @apply .text-6;
+}
+
+/* Responsive sizes */
+
+@media only screen and (min-width: config('screens.sm')) {
+  .Text.sm-size1 {
+    letter-spacing: .014em;
+    @apply .text-1;
+  }
+
+  .Text.sm-size2 {
+    letter-spacing: .008em;
+    @apply .text-2;
+  }
+
+  .Text.sm-size3 {
+    @apply .text-3;
+  }
+
+  .Text.sm-size4 {
+    @apply .text-4;
+  }
+
+  .Text.sm-size5 {
+    @apply .text-5;
+  }
+
+  .Text.sm-size6 {
+    @apply .text-6;
+  }
+}
+
+@media only screen and (min-width: config('screens.md')) {
+  .Text.md-size1 {
+    letter-spacing: .014em;
+    @apply .text-1;
+  }
+
+  .Text.md-size2 {
+    letter-spacing: .008em;
+    @apply .text-2;
+  }
+
+  .Text.md-size3 {
+    @apply .text-3;
+  }
+
+  .Text.md-size4 {
+    @apply .text-4;
+  }
+
+  .Text.md-size5 {
+    @apply .text-5;
+  }
+
+  .Text.md-size6 {
+    @apply .text-6;
+  }
+}
+
+@media only screen and (min-width: config('screens.lg')) {
+  .Text.lg-size1 {
+    letter-spacing: .014em;
+    @apply .text-1;
+  }
+
+  .Text.lg-size2 {
+    letter-spacing: .008em;
+    @apply .text-2;
+  }
+
+  .Text.lg-size3 {
+    @apply .text-3;
+  }
+
+  .Text.lg-size4 {
+    @apply .text-4;
+  }
+
+  .Text.lg-size5 {
+    @apply .text-5;
+  }
+
+  .Text.lg-size6 {
+    @apply .text-6;
+  }
+}
+
+@media only screen and (min-width: config('screens.xl')) {
+  .Text.xl-size1 {
+    letter-spacing: .014em;
+    @apply .text-1;
+  }
+
+  .Text.xl-size2 {
+    letter-spacing: .008em;
+    @apply .text-2;
+  }
+
+  .Text.xl-size3 {
+    @apply .text-3;
+  }
+
+  .Text.xl-size4 {
+    @apply .text-4;
+  }
+
+  .Text.xl-size5 {
+    @apply .text-5;
+  }
+
+  .Text.xl-size6 {
+    @apply .text-6;
+  }
+}

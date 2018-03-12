@@ -1,0 +1,16 @@
+/* Default */
+
+.Header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    @apply .py-2 .bg-blue .z-500;
+}
+
+/* Variations */
+
+.Header.sticky {
+    position: fixed;
+}
