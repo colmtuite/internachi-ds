@@ -1,0 +1,27 @@
+/* Default */
+
+.Select {
+    width: 100%;
+    @apply .h-8 .bg-grey-light .text-3;
+}
+
+.Select:focus {
+    outline-width: 1px;
+    outline-style: dashed;
+    outline-color: config('colors.blue');
+    outline-offset: 2px;
+}
+
+/* Sizes */
+
+.Select.size1 {
+    @apply .h-8;
+}
+
+.Select.size2 {
+    @apply .h-10;
+}
+
+.Select.size3 {
+    @apply .h-12;
+}
