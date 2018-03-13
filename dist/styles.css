@@ -906,7 +906,7 @@ button,
 
 .Button.blue {
   box-shadow: none;
-  background-color: #3490dc;
+  background-color: hsl(219, 84%, 56%);
   color: #fff;
 }
 
@@ -1160,7 +1160,7 @@ button,
 
 .Switch input:checked + div:before {
   transform: translateX(1rem);
-  background-color: #3490dc;
+  background-color: hsl(219, 84%, 56%);
 }
 
 /* Disabled */
@@ -1190,7 +1190,7 @@ button,
   color: white;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #3490dc;
+  background-color: hsl(219, 84%, 56%);
   z-index: 500;
 }
 
@@ -1935,7 +1935,7 @@ button,
 /* Colors */
 
 .Progress.green > div {
-  background-image: linear-gradient(to right, #3490dc, #4dc0b5);
+  background-image: linear-gradient(to right, hsl(219, 84%, 56%), #4dc0b5);
   background-size: 100% 100%;
 }
 
@@ -1979,21 +1979,21 @@ button,
 /* Hover state*/
 
 .Checkbox:hover > input ~ div {
-  border-color: #3490dc;
+  border-color: hsl(219, 84%, 56%);
 }
 
 /* Focus state*/
 
 .Checkbox input:focus ~ div {
-  outline: 1px dashed #3490dc;
+  outline: 1px dashed hsl(219, 84%, 56%);
   outline-offset: 1px;
 }
 
 /* Checked state */
 
 .Checkbox > input:checked ~ div {
-  border-color: #3490dc;
-  background-color: #3490dc;
+  border-color: hsl(219, 84%, 56%);
+  background-color: hsl(219, 84%, 56%);
 }
 
 .Checkbox > input:checked ~ div:after {
@@ -2048,21 +2048,21 @@ button,
 /* Hover state*/
 
 .Radio:hover > input ~ div {
-  border-color: #3490dc;
+  border-color: hsl(219, 84%, 56%);
 }
 
 /* Focus state */
 
 .Radio input:focus ~ div {
-  outline: 1px dashed #3490dc;
+  outline: 1px dashed hsl(219, 84%, 56%);
   outline-offset: 1px;
 }
 
 /* Checked state */
 
 .Radio > input:checked ~ div {
-  border-color: #3490dc;
-  box-shadow: inset 0 0 0 4px #3490dc;
+  border-color: hsl(219, 84%, 56%);
+  box-shadow: inset 0 0 0 4px hsl(219, 84%, 56%);
   background-color: #fff;
 }
 
@@ -2097,7 +2097,7 @@ button,
 /* Focus state */
 
 .Input:focus {
-  box-shadow: inset 0 0 0 1px #3490dc;
+  box-shadow: inset 0 0 0 1px hsl(219, 84%, 56%);
 }
 
 /* Placeholder */
@@ -2426,7 +2426,7 @@ button,
 }
 
 .bg-blue {
-  background-color: #3490dc;
+  background-color: hsl(219, 84%, 56%);
 }
 
 .bg-blue-light {
@@ -2718,7 +2718,7 @@ button,
 }
 
 .hover\:bg-blue:hover {
-  background-color: #3490dc;
+  background-color: hsl(219, 84%, 56%);
 }
 
 .hover\:bg-blue-light:hover {
@@ -3070,7 +3070,7 @@ button,
 }
 
 .border-blue {
-  border-color: #3490dc;
+  border-color: hsl(219, 84%, 56%);
 }
 
 .border-blue-light {
@@ -3362,7 +3362,7 @@ button,
 }
 
 .hover\:border-blue:hover {
-  border-color: #3490dc;
+  border-color: hsl(219, 84%, 56%);
 }
 
 .hover\:border-blue-light:hover {
@@ -5652,7 +5652,7 @@ button,
 }
 
 .text-blue {
-  color: #3490dc;
+  color: hsl(219, 84%, 56%);
 }
 
 .text-blue-light {
@@ -5944,7 +5944,7 @@ button,
 }
 
 .hover\:text-blue:hover {
-  color: #3490dc;
+  color: hsl(219, 84%, 56%);
 }
 
 .hover\:text-blue-light:hover {
@@ -6648,7 +6648,7 @@ button,
   }
 
   .sm\:bg-blue {
-    background-color: #3490dc;
+    background-color: hsl(219, 84%, 56%);
   }
 
   .sm\:bg-blue-light {
@@ -6940,7 +6940,7 @@ button,
   }
 
   .sm\:hover\:bg-blue:hover {
-    background-color: #3490dc;
+    background-color: hsl(219, 84%, 56%);
   }
 
   .sm\:hover\:bg-blue-light:hover {
@@ -7292,7 +7292,7 @@ button,
   }
 
   .sm\:border-blue {
-    border-color: #3490dc;
+    border-color: hsl(219, 84%, 56%);
   }
 
   .sm\:border-blue-light {
@@ -7584,7 +7584,7 @@ button,
   }
 
   .sm\:hover\:border-blue:hover {
-    border-color: #3490dc;
+    border-color: hsl(219, 84%, 56%);
   }
 
   .sm\:hover\:border-blue-light:hover {
@@ -9866,7 +9866,7 @@ button,
   }
 
   .sm\:text-blue {
-    color: #3490dc;
+    color: hsl(219, 84%, 56%);
   }
 
   .sm\:text-blue-light {
@@ -10158,7 +10158,7 @@ button,
   }
 
   .sm\:hover\:text-blue:hover {
-    color: #3490dc;
+    color: hsl(219, 84%, 56%);
   }
 
   .sm\:hover\:text-blue-light:hover {
@@ -10863,7 +10863,7 @@ button,
   }
 
   .md\:bg-blue {
-    background-color: #3490dc;
+    background-color: hsl(219, 84%, 56%);
   }
 
   .md\:bg-blue-light {
@@ -11155,7 +11155,7 @@ button,
   }
 
   .md\:hover\:bg-blue:hover {
-    background-color: #3490dc;
+    background-color: hsl(219, 84%, 56%);
   }
 
   .md\:hover\:bg-blue-light:hover {
@@ -11507,7 +11507,7 @@ button,
   }
 
   .md\:border-blue {
-    border-color: #3490dc;
+    border-color: hsl(219, 84%, 56%);
   }
 
   .md\:border-blue-light {
@@ -11799,7 +11799,7 @@ button,
   }
 
   .md\:hover\:border-blue:hover {
-    border-color: #3490dc;
+    border-color: hsl(219, 84%, 56%);
   }
 
   .md\:hover\:border-blue-light:hover {
@@ -14081,7 +14081,7 @@ button,
   }
 
   .md\:text-blue {
-    color: #3490dc;
+    color: hsl(219, 84%, 56%);
   }
 
   .md\:text-blue-light {
@@ -14373,7 +14373,7 @@ button,
   }
 
   .md\:hover\:text-blue:hover {
-    color: #3490dc;
+    color: hsl(219, 84%, 56%);
   }
 
   .md\:hover\:text-blue-light:hover {
@@ -15078,7 +15078,7 @@ button,
   }
 
   .lg\:bg-blue {
-    background-color: #3490dc;
+    background-color: hsl(219, 84%, 56%);
   }
 
   .lg\:bg-blue-light {
@@ -15370,7 +15370,7 @@ button,
   }
 
   .lg\:hover\:bg-blue:hover {
-    background-color: #3490dc;
+    background-color: hsl(219, 84%, 56%);
   }
 
   .lg\:hover\:bg-blue-light:hover {
@@ -15722,7 +15722,7 @@ button,
   }
 
   .lg\:border-blue {
-    border-color: #3490dc;
+    border-color: hsl(219, 84%, 56%);
   }
 
   .lg\:border-blue-light {
@@ -16014,7 +16014,7 @@ button,
   }
 
   .lg\:hover\:border-blue:hover {
-    border-color: #3490dc;
+    border-color: hsl(219, 84%, 56%);
   }
 
   .lg\:hover\:border-blue-light:hover {
@@ -18296,7 +18296,7 @@ button,
   }
 
   .lg\:text-blue {
-    color: #3490dc;
+    color: hsl(219, 84%, 56%);
   }
 
   .lg\:text-blue-light {
@@ -18588,7 +18588,7 @@ button,
   }
 
   .lg\:hover\:text-blue:hover {
-    color: #3490dc;
+    color: hsl(219, 84%, 56%);
   }
 
   .lg\:hover\:text-blue-light:hover {
@@ -19293,7 +19293,7 @@ button,
   }
 
   .xl\:bg-blue {
-    background-color: #3490dc;
+    background-color: hsl(219, 84%, 56%);
   }
 
   .xl\:bg-blue-light {
@@ -19585,7 +19585,7 @@ button,
   }
 
   .xl\:hover\:bg-blue:hover {
-    background-color: #3490dc;
+    background-color: hsl(219, 84%, 56%);
   }
 
   .xl\:hover\:bg-blue-light:hover {
@@ -19937,7 +19937,7 @@ button,
   }
 
   .xl\:border-blue {
-    border-color: #3490dc;
+    border-color: hsl(219, 84%, 56%);
   }
 
   .xl\:border-blue-light {
@@ -20229,7 +20229,7 @@ button,
   }
 
   .xl\:hover\:border-blue:hover {
-    border-color: #3490dc;
+    border-color: hsl(219, 84%, 56%);
   }
 
   .xl\:hover\:border-blue-light:hover {
@@ -22511,7 +22511,7 @@ button,
   }
 
   .xl\:text-blue {
-    color: #3490dc;
+    color: hsl(219, 84%, 56%);
   }
 
   .xl\:text-blue-light {
@@ -22803,7 +22803,7 @@ button,
   }
 
   .xl\:hover\:text-blue:hover {
-    color: #3490dc;
+    color: hsl(219, 84%, 56%);
   }
 
   .xl\:hover\:text-blue-light:hover {
