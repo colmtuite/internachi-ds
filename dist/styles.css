@@ -2077,13 +2077,14 @@ button,
   outline: none;
   box-shadow: inset 0 0 0 1px #b8c2cc;
   width: 100%;
-  transition-property: box-shadow;
-  transition-duration: 150ms;
+  transition-property: box-shadow, background-color;
+  transition-duration: 100ms;
   transition-timing-function: linear;
   font-family: inherit;
   color: inherit;
   height: 2rem;
   padding-left: .5rem;
+  background-color: #fff;
   font-size: 1rem;
   border-radius: .25rem;
 }
@@ -2132,6 +2133,30 @@ button,
 .Input.size3 {
   height: 3rem;
   padding-left: 1rem;
+}
+
+/* Variations */
+
+.Input.transparent {
+  background-color: rgba(255, 255, 255, .2);
+  box-shadow: none;
+  color: #fff;
+}
+
+.Input.transparent:focus {
+  background-color: rgba(255, 255, 255, .3);
+}
+
+.Input.transparent::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, .75);
+}
+
+.Input.transparent::-moz-placeholder {
+  color: rgba(255, 255, 255, .75);
+}
+
+.Input.transparent:-ms-input-placeholder {
+  color: rgba(255, 255, 255, .75);
 }
 
 /* Validation */
