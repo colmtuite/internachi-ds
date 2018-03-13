@@ -1,0 +1,65 @@
+/* Default */
+
+.Input {
+    border: none;
+    outline: none;
+    box-shadow: inset 0 0 0 1px config('colors.grey');
+    width: 100%;
+    transition-property: box-shadow;
+    transition-duration: 150ms;
+    transition-timing-function: linear;
+    font-family: inherit;
+    color: inherit;
+    @apply .h-8 .pl-1 .text-4 .rounded-2;
+}
+
+/* Hover state */
+
+.Input:hover {
+    box-shadow: inset 0 0 0 1px config('colors.grey-dark');
+}
+
+/* Focus state */
+
+.Input:focus {
+    box-shadow: inset 0 0 0 1px config('colors.blue');
+}
+
+/* Placeholder */
+
+.Input::-webkit-input-placeholder {
+   color: config('colors.grey');
+   opacity:  1;
+}
+.Input::-moz-placeholder {
+   color: config('colors.grey');
+   opacity:  1;
+}
+.Input:-ms-input-placeholder {
+   color: config('colors.grey');
+   opacity:  1;
+}
+
+/* Sizes */
+
+.Input.size1 {
+    @apply .h-8 .pl-1;
+}
+
+.Input.size2 {
+    @apply .h-10 .pl-1;
+}
+
+.Input.size3 {
+    @apply .h-12 .pl-2;
+}
+
+/* Validation */
+
+.Input.is-valid {
+    box-shadow: inset 0 0 0 1px config('colors.teal');
+}
+
+.Input.is-invalid {
+    box-shadow: inset 0 0 0 1px config('colors.red');
+}
