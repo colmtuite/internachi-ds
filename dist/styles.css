@@ -2085,7 +2085,7 @@ button,
   height: 2rem;
   padding-left: .5rem;
   background-color: #fff;
-  font-size: 1rem;
+  font-size: .875rem;
   border-radius: .25rem;
 }
 
@@ -2148,15 +2148,15 @@ button,
 }
 
 .Input.transparent::-webkit-input-placeholder {
-  color: rgba(255, 255, 255, .75);
+  color: rgba(255, 255, 255, .65);
 }
 
 .Input.transparent::-moz-placeholder {
-  color: rgba(255, 255, 255, .75);
+  color: rgba(255, 255, 255, .65);
 }
 
 .Input.transparent:-ms-input-placeholder {
-  color: rgba(255, 255, 255, .75);
+  color: rgba(255, 255, 255, .65);
 }
 
 /* Validation */
