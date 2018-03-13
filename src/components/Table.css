@@ -1,0 +1,29 @@
+.Table {
+    border-collapse: collapse;
+    background-color: transparent;
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+    @apply .text-3;
+}
+
+.Table th,
+.Table td {
+    border-top: 1px solid config('colors.grey-lighter');
+    @apply .p-2;
+}
+
+.Table th {
+    font-weight: normal;
+    @apply .text-grey-dark;
+}
+
+.Table thead th {
+    font-weight: normal;
+    border-top: none;
+    border-bottom: 1px solid config('colors.grey-light');
+}
+
+.Table.striped tbody tr:nth-of-type(odd) {
+    @apply .bg-grey-lightest;
+}

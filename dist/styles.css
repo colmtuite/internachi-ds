@@ -2199,13 +2199,41 @@ button,
   height: 3rem;
 }
 
+.Table {
+  border-collapse: collapse;
+  background-color: transparent;
+  width: 100%;
+  max-width: 100%;
+  text-align: left;
+  font-size: .875rem;
+}
+
+.Table th,
+.Table td {
+  border-top: 1px solid #f1f5f8;
+  padding: 1rem;
+}
+
+.Table th {
+  font-weight: normal;
+  color: #8795a1;
+}
+
+.Table thead th {
+  font-weight: normal;
+  border-top: none;
+  border-bottom: 1px solid #dae1e7;
+}
+
+.Table.striped tbody tr:nth-of-type(odd) {
+  background-color: #f8fafc;
+}
+
 /* @import "components/Tab.css"; */
 
 /* @import "components/Link.css"; */
 
 /* @import "components/ListItem.css"; */
-
-/* @import "components/Table.css"; */
 
 /* @import "components/MegaMenu.css"; */
 
