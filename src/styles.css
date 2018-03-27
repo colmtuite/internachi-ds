@@ -31,7 +31,7 @@
 /* Interactive components */
 
 /* @import "components/MegaMenu.css"; */
-/* @import "components/Dropdown.css"; */
+@import "components/Dropdown.css";
 @import "components/Overlay.css";
 
 /* Tailwind utilities */

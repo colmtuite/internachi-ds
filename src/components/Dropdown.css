@@ -1,0 +1,21 @@
+/* Element to act as Dropdown hook */
+
+.DropdownContainer {
+    display: inline-block;
+    position: relative;
+}
+
+/* Dropdown panel */
+
+.Dropdown {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .1), 0 15px 25px hsla(205, 50%, 10%, .05);
+    left: 0;
+    min-width: 160px;
+    overflow: hidden;
+    position: absolute;
+    top: 100%;
+    transition-property: all;
+    transition-duration: 150ms;
+    transition-timing-function: ease-in-out;
+    @apply .bg-white .rounded-2 .mt-1;
+}

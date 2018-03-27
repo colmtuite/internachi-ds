@@ -2337,6 +2337,8 @@ button,
   outline: none;
 }
 
+/* Default styles */
+
 .Link {
   -ms-flex-align: center;
       align-items: center;
@@ -2353,6 +2355,8 @@ button,
   outline: 1px dashed hsl(219, 84%, 56%);
   outline-offset: 1px;
 }
+
+/* Modifiers */
 
 .Link.blue {
   text-decoration: none;
@@ -2389,7 +2393,29 @@ button,
 
 /* @import "components/MegaMenu.css"; */
 
-/* @import "components/Dropdown.css"; */
+/* Element to act as Dropdown hook */
+
+.DropdownContainer {
+  display: inline-block;
+  position: relative;
+}
+
+/* Dropdown panel */
+
+.Dropdown {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, .1), 0 15px 25px hsla(205, 50%, 10%, .05);
+  left: 0;
+  min-width: 160px;
+  overflow: hidden;
+  position: absolute;
+  top: 100%;
+  transition-property: all;
+  transition-duration: 150ms;
+  transition-timing-function: ease-in-out;
+  background-color: #fff;
+  border-radius: .25rem;
+  margin-top: .5rem;
+}
 
 .Overlay {
   background-color: rgba(255, 255, 255, .85);
