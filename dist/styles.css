@@ -594,7 +594,7 @@ button,
   cursor: pointer;
 }
 
-/* Custom components */
+/* Static components */
 
 /* Default styles */
 
@@ -2229,11 +2229,121 @@ button,
   background-color: #f8fafc;
 }
 
-/* @import "components/Tab.css"; */
+.Tab {
+  -ms-flex-align: center;
+      align-items: center;
+  cursor: pointer;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .025em;
+  text-align: center;
+  transition: all 100ms ease;
+  white-space: nowrap;
+  height: 2.5rem;
+  font-size: .75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #b8c2cc;
+}
+
+.Tab:hover {
+  color: inherit;
+}
+
+.Tab:focus {
+  outline: 1px dashed hsl(219, 84%, 56%);
+  color: inherit;
+}
+
+/* Active state*/
+
+.Tab.is-active {
+  box-shadow: inset 0 -2px 0 0 hsl(219, 84%, 56%);
+  color: inherit;
+  cursor: default;
+  outline: none;
+}
+
+/* Modifiers */
+
+.Tab.transparent {
+  color: rgba(255, 255, 255, .7);
+}
+
+.Tab.transparent:hover {
+  color: rgba(255, 255, 255, 1);
+}
+
+.Tab.transparent:focus {
+  color: white;
+}
+
+.Tab.transparent.is-active {
+  box-shadow: inset 0 -2px 0 0 #fff;
+  color: white;
+}
+
+/* Expanded */
+
+.Tab.expanded {
+  -ms-flex-positive: 1;
+      flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+}
+
+.BubbleTab {
+  -ms-flex-align: center;
+      align-items: center;
+  cursor: pointer;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .025em;
+  text-align: center;
+  transition: all 100ms ease;
+  white-space: nowrap;
+  border-radius: .25rem .25rem 0 0;
+  color: rgba(255, 255, 255, .7);
+  height: 2.5rem;
+  font-size: .75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.BubbleTab:hover,
+.BubbleTab:active {
+  color: white;
+}
+
+.BubbleTab:focus {
+  outline: 1px dashed #fff;
+  color: white;
+}
+
+/* Active state*/
+
+.BubbleTab.is-active {
+  background-color: white;
+  color: inherit;
+  cursor: default;
+  outline: none;
+}
 
 /* @import "components/Link.css"; */
 
+/* @import "components/Grid.css"; */
+
 /* @import "components/ListItem.css"; */
+
+/* Interactive components */
 
 /* @import "components/MegaMenu.css"; */
 
@@ -2258,8 +2368,6 @@ button,
   opacity: 1;
   pointer-events: auto;
 }
-
-/* @import "components/Grid.css"; */
 
 /* Tailwind utilities */
 

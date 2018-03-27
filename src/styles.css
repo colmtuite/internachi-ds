@@ -2,7 +2,7 @@
 
 @import "preflight.css";
 
-/* Custom components */
+/* Static components */
 
 @import "components/Badge.css";
 @import "components/Button.css";
@@ -22,15 +22,17 @@
 @import "components/Input.css";
 @import "components/Select.css";
 @import "components/Table.css";
-/* @import "components/Tab.css"; */
+@import "components/Tab.css";
+@import "components/BubbleTab.css";
 /* @import "components/Link.css"; */
+/* @import "components/Grid.css"; */
 /* @import "components/ListItem.css"; */
+
+/* Interactive components */
 
 /* @import "components/MegaMenu.css"; */
 /* @import "components/Dropdown.css"; */
 @import "components/Overlay.css";
-
-/* @import "components/Grid.css"; */
 
 /* Tailwind utilities */
 

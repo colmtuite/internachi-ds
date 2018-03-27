@@ -39,6 +39,7 @@
 
     <section class="Section size1">
       <div class="Container size1">
+        <h3 class="Heading size4 mb-6">Container</h3>
         <div class="bg-pink py-4">
           This is a Container component. Size 1. For restricting the width of site content.
         </div>
@@ -70,7 +71,8 @@
     </section>
 
     <section class="Section md-size3">
-      <div class="Container">
+      <div class="Container size4">
+        <h3 class="Heading size4 mb-6">Badge</h3>
         <div class="flex flex-col items-center">
           <div class="flex mb-8">
             <span class="Badge">Badge</span>
@@ -102,30 +104,33 @@
     </section>
 
     <section class="Section md-size3">
-      <div class="flex flex-col items-center justify-center">
-        <div class="flex mb-8">
-          <button class="Button" type="button">Default</button>
-        </div>
-        <div class="flex items-center mb-8">
-          <div class="ml-4 mr-2">
-            <button class="Button size1" type="button">Size 1</button>
+      <div class="Container size3">
+        <h3 class="Heading size4 mb-6">Button</h3>
+        <div class="flex flex-col items-center justify-center">
+          <div class="flex mb-8">
+            <button class="Button" type="button">Default</button>
           </div>
-          <div class="ml-4 mr-2">
-            <button class="Button" type="button">Size 2</button>
+          <div class="flex items-center mb-8">
+            <div class="ml-4 mr-2">
+              <button class="Button size1" type="button">Size 1</button>
+            </div>
+            <div class="ml-4 mr-2">
+              <button class="Button" type="button">Size 2</button>
+            </div>
+            <div class="ml-4 mr-2">
+              <button class="Button size3" type="button">Size 3</button>
+            </div>
           </div>
-          <div class="ml-4 mr-2">
-            <button class="Button size3" type="button">Size 3</button>
-          </div>
-        </div>
-        <div class="flex items-center mb-8">
-          <div class="ml-4 mr-2">
-            <button class="Button blue" type="button">Blue button</button>
-          </div>
-          <div class="ml-4 mr-2">
-            <button class="Button green" type="button">Green button</button>
-          </div>
-          <div class="ml-4 mr-2">
-            <button class="Button red" type="button">Red button</button>
+          <div class="flex items-center mb-8">
+            <div class="ml-4 mr-2">
+              <button class="Button blue" type="button">Blue button</button>
+            </div>
+            <div class="ml-4 mr-2">
+              <button class="Button green" type="button">Green button</button>
+            </div>
+            <div class="ml-4 mr-2">
+              <button class="Button red" type="button">Red button</button>
+            </div>
           </div>
         </div>
       </div>
@@ -133,6 +138,7 @@
 
     <section class="Section size3">
       <div class="Container size3">
+        <h3 class="Heading size4 mb-6">Card</h3>
         <div class="Card p-4 mb-4">
           Default card
         </div>
@@ -149,6 +155,7 @@
 
     <section class="Section md-size3">
       <div class="Container size4">
+        <h3 class="Heading size4 mb-6">Heading</h3>
         <h5 class="Heading size6 mb-2">Heading 6</h5>
         <h5 class="Heading size5 mb-2">Heading 5</h5>
         <h5 class="Heading size4 mb-2">Heading 4</h5>
@@ -160,6 +167,7 @@
 
     <section class="Section md-size3">
       <div class="Container size4">
+        <h3 class="Heading size4 mb-6">Text</h3>
         <p class="Text size6 leading-3 mb-2">If you use the HOC pattern for React components, you may have found "refs" difficult to work with. You may have tried workarounds like proxying methods or special ref props (e.g. "innerRef").</p>
         <p class="Text size5 leading-3 mb-2">If you use the HOC pattern for React components, you may have found "refs" difficult to work with. You may have tried workarounds like proxying methods or special ref props (e.g. "innerRef").</p>
         <p class="Text size4 leading-3 mb-2">If you use the HOC pattern for React components, you may have found "refs" difficult to work with. You may have tried workarounds like proxying methods or special ref props (e.g. "innerRef").</p>
@@ -171,6 +179,7 @@
 
     <section class="Section md-size3">
       <div class="Container size4">
+        <h3 class="Heading size4 mb-6">Title</h3>
         <h3 class="Title size3 text-blue mb-2">Title Three</h3>
         <h3 class="Title size2 text-pink mb-2">Default Title</h3>
         <h3 class="Title size1 text-purple mb-2">Title One</h3>
@@ -179,6 +188,7 @@
 
     <section class="Section md-size3">
       <div class="Container size4">
+        <h3 class="Heading size4 mb-6">Avatar</h3>
         <div class="flex items-center">
           <div class="Avatar size1 ml-2">
             C
@@ -224,6 +234,7 @@
 
     <section class="Section md-size3">
       <div class="Container size4">
+        <h3 class="Heading size4 mb-6">Progress</h3>
         <div class="mb-4">
           <div class="Progress size1">
             <div role="progressbar" style="width:50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
@@ -238,19 +249,22 @@
     <!-- <div class="Overlay is-active"></div> -->
 
     <section class="Section md-size3">
-      <div class="flex flex-col items-center justify-center">
-        <div class="flex items-center">
-          <div class="ml-4">
-            <label class="Switch">
-              <input type="checkbox">
-              <div></div>
-            </label>
-          </div>
-          <div class="ml-4">
-            <label class="Switch is-disabled">
-              <input type="checkbox">
-              <div></div>
-            </label>
+      <div class="Container size4">
+        <h3 class="Heading size4 mb-6">Switch</h3>
+        <div class="flex flex-col items-center justify-center">
+          <div class="flex items-center">
+            <div class="ml-4">
+              <label class="Switch">
+                <input type="checkbox">
+                <div></div>
+              </label>
+            </div>
+            <div class="ml-4">
+              <label class="Switch is-disabled">
+                <input type="checkbox">
+                <div></div>
+              </label>
+            </div>
           </div>
         </div>
       </div>
@@ -258,6 +272,7 @@
 
     <section class="Section md-size3">
       <div class="Container size4">
+        <h3 class="Heading size4 mb-6">Checkbox</h3>
         <div class="mb-2">
           <label class="Checkbox">
             <input type="checkbox" name="checkbox_group">
@@ -281,6 +296,7 @@
 
     <section class="Section md-size3">
       <div class="Container size4">
+        <h3 class="Heading size4 mb-6">Radio</h3>
         <div class="mb-2">
           <label class="Radio">
             <input type="radio" name="radio_group">
@@ -304,6 +320,7 @@
 
     <section class="Section md-size3">
       <div class="Container size4">
+        <h3 class="Heading size4 mb-6">Input</h3>
         <div class="mb-2">
           <input class="Input" type="text" placeholder="Default input">
         </div>
@@ -332,6 +349,7 @@
 
     <section class="Section md-size3">
       <div class="Container size4">
+        <h3 class="Heading size4 mb-6">Select</h3>
         <div class="mb-2">
           <select class="Select">
             <option value="option_1">Option 1</option>
@@ -372,6 +390,7 @@
 
     <section class="Section md-size3">
       <div class="Container size3">
+        <h3 class="Heading size4 mb-6">Table</h3>
         <div class="mb-4">
           <table class="Table">
             <thead>
@@ -561,6 +580,70 @@
               </tr>
             </tbody>
           </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="Section md-size3">
+      <div class="Container size3">
+        <h3 class="Heading size4 mb-6">Tab</h3>
+        <div class="mb-4">
+          <div class="flex">
+            <button class="Tab is-active" type="button">
+              Tab one
+            </button>
+            <button class="Tab" type="button">
+              Tab two
+            </button>
+            <button class="Tab" type="button">
+              Tab three
+            </button>
+          </div>
+        </div>
+        <div class="mb-4">
+          <div class="flex bg-blue">
+            <button class="Tab transparent" type="button">
+              Tab one
+            </button>
+            <button class="Tab transparent is-active" type="button">
+              Tab two
+            </button>
+            <button class="Tab transparent" type="button">
+              Tab three
+            </button>
+          </div>
+        </div>
+        <div class="mb-4">
+          <div class="flex">
+            <button class="Tab expanded is-active" type="button">
+              Tab one
+            </button>
+            <button class="Tab expanded" type="button">
+              Tab two
+            </button>
+            <button class="Tab expanded" type="button">
+              Tab three
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="Section md-size3">
+      <div class="Container size3">
+        <h3 class="Heading size4 mb-6">Bubble Tab</h3>
+        <div class="mb-4">
+          <div class="flex bg-blue pt-2 pl-1">
+            <button class="BubbleTab is-active" type="button">
+              Tab one
+            </button>
+            <button class="BubbleTab" type="button">
+              Tab two
+            </button>
+            <button class="BubbleTab" type="button">
+              Tab three
+            </button>
+          </div>
         </div>
       </div>
     </section>
