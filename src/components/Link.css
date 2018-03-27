@@ -1,0 +1,38 @@
+.Link {
+    align-items: center;
+    display: inline-flex;
+    color: inherit;
+    text-decoration: underline;
+    transition-property: color;
+    transition-duration: 100ms;
+    transition-timing-function: linear;
+}
+
+.Link:focus {
+    outline: 1px dashed config('colors.blue');
+    outline-offset: 1px;
+}
+
+.Link.blue {
+    text-decoration: none;
+    @apply .text-blue;
+}
+.Link.blue:hover {
+    @apply .text-blue-dark;
+}
+
+.Link.red {
+    text-decoration: none;
+    @apply .text-red;
+}
+.Link.red:hover {
+    @apply .text-red-dark;
+}
+
+.Link.green {
+    text-decoration: none;
+    @apply .text-teal;
+}
+.Link.green:hover {
+    @apply .text-teal-dark;
+}

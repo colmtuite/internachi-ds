@@ -2337,7 +2337,49 @@ button,
   outline: none;
 }
 
-/* @import "components/Link.css"; */
+.Link {
+  -ms-flex-align: center;
+      align-items: center;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: inherit;
+  text-decoration: underline;
+  transition-property: color;
+  transition-duration: 100ms;
+  transition-timing-function: linear;
+}
+
+.Link:focus {
+  outline: 1px dashed hsl(219, 84%, 56%);
+  outline-offset: 1px;
+}
+
+.Link.blue {
+  text-decoration: none;
+  color: hsl(219, 84%, 56%);
+}
+
+.Link.blue:hover {
+  color: #2779bd;
+}
+
+.Link.red {
+  text-decoration: none;
+  color: #e3342f;
+}
+
+.Link.red:hover {
+  color: #cc1f1a;
+}
+
+.Link.green {
+  text-decoration: none;
+  color: #4dc0b5;
+}
+
+.Link.green:hover {
+  color: #38a89d;
+}
 
 /* @import "components/Grid.css"; */
 
