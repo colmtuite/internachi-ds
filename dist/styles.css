@@ -1200,6 +1200,84 @@ button,
   position: fixed;
 }
 
+.IconButton {
+  -ms-flex-align: center;
+      align-items: center;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  line-height: 1;
+  outline: none;
+  text-decoration: none;
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  vertical-align: middle;
+  color: #8795a1;
+  height: 2rem;
+  width: 2rem;
+}
+
+.IconButton:hover {
+  color: #22292f;
+}
+
+.IconButton.is-active {
+  opacity: .5;
+}
+
+.IconButton:active {
+  opacity: .25;
+}
+
+/* Sizes */
+
+.IconButton.size1 {
+  height: 1rem;
+  width: 1rem;
+}
+
+.IconButton.size2 {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+/* Colors */
+
+.IconButton.blue:hover {
+  color: hsl(219, 84%, 56%);
+}
+
+.IconButton.green:hover {
+  color: #4dc0b5;
+}
+
+.IconButton.yellow:hover {
+  color: #ffed4a;
+}
+
+.IconButton.red:hover {
+  color: #e3342f;
+}
+
+/* Disabled state */
+
+.IconButton.is-disabled {
+  opacity: .25;
+  cursor: not-allowed;
+}
+
 /* Default */
 
 .Divider {
@@ -2390,8 +2468,8 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-top: -40px;
-  margin-left: -40px;
+  margin-top: calc(2.5rem * -1);
+  margin-left: calc(2.5rem * -1);
 }
 
 .GridColumn {
@@ -2415,8 +2493,8 @@ button,
 .GridColumn-10,
 .GridColumn-11,
 .GridColumn-12 {
-  padding-top: 40px;
-  padding-left: 40px;
+  padding-top: 2.5rem;
+  padding-left: 2.5rem;
 }
 
 .GridColumn-1 {

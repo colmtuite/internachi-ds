@@ -1,8 +1,8 @@
 .Grid {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -40px;
-  margin-left: -40px;
+  margin-top: calc(config('margin.5') * -1);
+  margin-left: calc(config('margin.5') * -1);
 }
 
 .GridColumn {
@@ -24,8 +24,8 @@
 .GridColumn-10,
 .GridColumn-11,
 .GridColumn-12 {
-  padding-top: 40px;
-  padding-left: 40px;
+  padding-top: config('padding.5');
+  padding-left: config('padding.5');
 }
 
 .GridColumn-1 {

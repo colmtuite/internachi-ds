@@ -1,0 +1,63 @@
+.IconButton {
+  align-items: center;
+  appearance: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  line-height: 1;
+  outline: none;
+  text-decoration: none;
+  transition-property: all;
+  transition-duration: 200ms;
+  transition-timing-function: ease;
+  user-select: none;
+  vertical-align: middle;
+  @apply .text-grey-dark .h-8 .w-8;
+}
+
+.IconButton:hover {
+  @apply .text-black;
+}
+.IconButton.is-active {
+  opacity: .5;
+}
+.IconButton:active {
+  opacity: .25;
+}
+
+/* Sizes */
+
+.IconButton.size1 {
+  @apply .h-4 .w-4;
+}
+
+.IconButton.size2 {
+  @apply .h-6 .w-6;
+}
+
+/* Colors */
+
+.IconButton.blue:hover {
+  @apply .text-blue;
+}
+
+.IconButton.green:hover {
+  @apply .text-teal;
+}
+
+.IconButton.yellow:hover {
+  @apply .text-yellow;
+}
+
+.IconButton.red:hover {
+  @apply .text-red;
+}
+
+/* Disabled state */
+
+.IconButton.is-disabled {
+  opacity: .25;
+  cursor: not-allowed;
+}
