@@ -17,5 +17,5 @@
     transition-property: all;
     transition-duration: 150ms;
     transition-timing-function: ease-in-out;
-    @apply .bg-white .rounded-2 .mt-1;
+    @apply .bg-white .rounded .mt-1;
 }

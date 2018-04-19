@@ -14,7 +14,7 @@
   transition-timing-function: ease;
   user-select: none;
   vertical-align: middle;
-  @apply .text-grey-600 .h-4 .w-4;
+  @apply .text-grey-6 .h-4 .w-4;
 }
 
 .IconButton:hover {
@@ -44,19 +44,19 @@
 /* Colors */
 
 .IconButton.blue:hover {
-  @apply .text-blue-500;
+  @apply .text-blue-5;
 }
 
 .IconButton.green:hover {
-  @apply .text-green-500;
+  @apply .text-green-5;
 }
 
 .IconButton.yellow:hover {
-  @apply .text-yellow-500;
+  @apply .text-yellow-5;
 }
 
 .IconButton.red:hover {
-  @apply .text-red-500;
+  @apply .text-red-5;
 }
 
 /* Disabled state */

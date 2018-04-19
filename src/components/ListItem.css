@@ -20,7 +20,7 @@
 /* Props */
 
 .ListItem.rounded {
-  @apply .rounded-2;
+  @apply .rounded;
 }
 
 /* Interactive */
@@ -34,11 +34,11 @@
 
 .ListItem.interactive:hover,
 .ListItem.interactive:focus {
-  @apply .bg-grey-200;
+  @apply .bg-grey-2;
 }
 
 .ListItem.interactive:active {
-  @apply .bg-grey-300;
+  @apply .bg-grey-3;
 }
 
 /* States */
@@ -46,5 +46,5 @@
 .ListItem.is-active,
 .ListItem.is-active:hover {
   cursor: default;
-  @apply .bg-blue-500 .text-white;
+  @apply .bg-blue-5 .text-white;
 }

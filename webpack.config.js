@@ -10,6 +10,15 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.woff$/,
+        use: {
+          loader: "file-loader",
+          options: {
+            name: "fonts/[name].[ext]",
+          },
+        },
+      },
+      {
         test: /\.css$/,
         use: ExtractTextPlugin.extract({
           fallback: 'style-loader',
@@ -18,7 +27,7 @@ module.exports = {
             'postcss-loader'
           ]
         })
-      }
+      },
     ]
   },
   plugins: [

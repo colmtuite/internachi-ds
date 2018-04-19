@@ -4,7 +4,7 @@
   position: fixed;
   top: 96px;
   left: 0;
-  border-top: 1px solid config('colors.grey-300');
+  border-top: 1px solid config('colors.grey-3');
   background-color: white;
   min-height: 100px;
   box-shadow: 0 20px 20px rgba(0,0,0,.05);
