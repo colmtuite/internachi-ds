@@ -119,6 +119,20 @@ module.exports = {
       'Times New Roman', 
       'serif',
     ],
+    'narrow': [
+      'Oswald', 
+      '-apple-system',
+      'BlinkMacSystemFont',
+      'Segoe UI',
+      'Roboto',
+      'Oxygen',
+      'Ubuntu',
+      'Cantarell',
+      'Fira Sans',
+      'Droid Sans',
+      'Helvetica Neue',
+      'sans-serif',
+    ],
     'sans': [
       'Gotham Narrow SSm A',
       'Gotham Narrow SSm B',
@@ -145,16 +159,16 @@ module.exports = {
   },
 
   textSizes: {
-    '1': '.75rem',    // 12px
-    '2': '.875rem',   // 14px
-    '3': '1rem',      // 16px
+    '1': '.625rem',   // 10px
     'base': '1rem',   // 16px
-    '4': '1.125rem',  // 18px
-    '5': '1.25rem',   // 20px
-    '6': '1.5rem',    // 24px
-    '7': '1.875rem',  // 30px
-    '8': '2.25rem',   // 36px
-    '9': '3rem',      // 48px
+    '2': '.75rem',    // 12px
+    '3': '.875rem',   // 14px
+    '4': '1rem',      // 16px
+    '5': '1.125rem',  // 18px
+    '6': '1.25rem',   // 20px
+    '7': '1.5rem',    // 24px
+    '8': '2.125rem',  // 34px
+    '9': '2.75rem',   // 44px
   },
 
   fontWeights: {
@@ -207,15 +221,15 @@ module.exports = {
     'auto': 'auto',
     'px': '1px',
     '0': '0',
-    '1': '0.25rem',
-    '2': '0.5rem',
-    '3': '0.75rem',
-    '4': '1rem',
-    '5': '1.5rem',
-    '6': '2rem',
-    '7': '2.5rem',
-    '8': '3rem',
-    '9': '4rem',
+    '1': '.5rem',
+    '2': '1rem',
+    '3': '1.5rem',
+    '4': '2rem',
+    '5': '2.5rem',
+    '6': '3rem',
+    '7': '3.5rem',
+    '8': '4rem',
+    '9': '5rem',
     '1/2': '50%',
     '1/3': '33.33333%',
     '2/3': '66.66667%',
@@ -235,15 +249,15 @@ module.exports = {
     'auto': 'auto',
     'px': '1px',
     '0': '0',
-    '1': '0.25rem',
-    '2': '0.5rem',
-    '3': '0.75rem',
-    '4': '1rem',
-    '5': '1.5rem',
-    '6': '2rem',
-    '7': '2.5rem',
-    '8': '3rem',
-    '9': '4rem',
+    '1': '.5rem',
+    '2': '1rem',
+    '3': '1.5rem',
+    '4': '2rem',
+    '5': '2.5rem',
+    '6': '3rem',
+    '7': '3.5rem',
+    '8': '4rem',
+    '9': '5rem',
     'full': '100%',
     'screen': '100vh'
   },
@@ -251,15 +265,15 @@ module.exports = {
   minWidth: {
     'px': '1px',
     '0': '0',
-    '1': '0.25rem',
-    '2': '0.5rem',
-    '3': '0.75rem',
-    '4': '1rem',
-    '5': '1.5rem',
-    '6': '2rem',
-    '7': '2.5rem',
-    '8': '3rem',
-    '9': '4rem',
+    '1': '.5rem',
+    '2': '1rem',
+    '3': '1.5rem',
+    '4': '2rem',
+    '5': '2.5rem',
+    '6': '3rem',
+    '7': '3.5rem',
+    '8': '4rem',
+    '9': '5rem',
     '1/2': '50%',
     '1/3': '33.33333%',
     '2/3': '66.66667%',
@@ -278,15 +292,15 @@ module.exports = {
   minHeight: {
     'px': '1px',
     '0': '0',
-    '1': '0.25rem',
-    '2': '0.5rem',
-    '3': '0.75rem',
-    '4': '1rem',
-    '5': '1.5rem',
-    '6': '2rem',
-    '7': '2.5rem',
-    '8': '3rem',
-    '9': '4rem',
+    '1': '.5rem',
+    '2': '1rem',
+    '3': '1.5rem',
+    '4': '2rem',
+    '5': '2.5rem',
+    '6': '3rem',
+    '7': '3.5rem',
+    '8': '4rem',
+    '9': '5rem',
     'full': '100%',
     'screen': '100vh'
   },

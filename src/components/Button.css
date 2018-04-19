@@ -1,134 +1,41 @@
-.Button {
-  position: relative;
-  align-items: center;
-  appearance: none;
-  background: white;
-  border: none;
-  cursor: pointer;
-  display: inline-flex;
-  font-weight: 700;
-  justify-content: center;
-  letter-spacing: .6px;
+/* Button Base */
+
+.btn {
+  @apply .relative .inline-flex .items-center .justify-center .align-middle .text-center .z-0;
+  @apply .h-4 .px-2;
+  @apply .appearance-none .bg-blue-5 .border-none .shadow-sm .rounded;
+  @apply .cursor-pointer .pointer-events-auto;
+  @apply .text-3 .text-white .font-thin .font-narrow .tracking-wide .no-underline .uppercase .select-none .whitespace-no-wrap;
+  
   outline: none;
-  pointer-events: auto;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
+
   transition-property: all;
   transition-duration: 150ms;
   transition-timing-function: ease;
-  user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
-  box-shadow: inset 0 0 0 1px config('colors.grey-4');
-  border-radius: 4px;
-  z-index: 0;
-  font-family: 'Oswald', sans-serif;
-  @apply .bg-white .text-3 .h-4 .px-2 .text-grey-6;
 }
 
-.Button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 8px;
-  right: 8px;
-  height: 100%;
-  border-radius: 4px;
-  box-shadow: 0 4px 0 0px config('colors.grey-3');
-  z-index: -1;
-}
+/* Responsive Buttons */
 
-/* Size */
-
-.Button.size1 {
-  @apply .h-3 .text-3 .px-2;
-}
-
-.Button.size2 {
-  @apply .h-4 .text-3 .px-2;
-}
-
-.Button.size3 {
-  @apply .h-5 .text-5 .px-3;
-}
-
-/* Responsive sizes */
-
-@media only screen and (min-width: config('screens.sm')) {
-  .Button.sm-size1 {
-    @apply .h-8 .text-3 .px-2;
+@responsive {
+  .btn-sm {
+    @apply .h-3 .text-3 .px-2;
   }
 
-  .Button.sm-size2 {
-    @apply .h-8 .text-4 .px-2;
-  }
-
-  .Button.sm-size3 {
-    @apply .h-6 .text-5 .px-3;
-  }
-}
-
-@media only screen and (min-width: config('screens.md')) {
-  .Button.md-size1 {
-    @apply .h-8 .text-3 .px-2;
-  }
-
-  .Button.md-size2 {
-    @apply .h-8 .text-4 .px-2;
-  }
-
-  .Button.md-size3 {
-    @apply .h-6 .text-5 .px-3;
-  }
-}
-
-@media only screen and (min-width: config('screens.lg')) {
-  .Button.lg-size1 {
-    @apply .h-8 .text-3 .px-2;
-  }
-
-  .Button.lg-size2 {
-    @apply .h-8 .text-4 .px-2;
-  }
-
-  .Button.lg-size3 {
-    @apply .h-6 .text-5 .px-3;
-  }
-}
-
-@media only screen and (min-width: config('screens.xl')) {
-  .Button.xl-size1 {
-    @apply .h-8 .text-3 .px-2;
-  }
-
-  .Button.xl-size2 {
-    @apply .h-8 .text-4 .px-2;
-  }
-
-  .Button.xl-size3 {
-    @apply .h-6 .text-5 .px-3;
+  .btn-lg {
+    @apply .h-5 .text-5 .px-3;
   }
 }
 
 /* Color */
 
-.Button.white {
-  box-shadow: none;
+.btn-white {
   @apply .bg-white .text-white;
 }
 
-.Button.blue {
-  box-shadow: none;
-  @apply .bg-blue-5 .text-white;
-}
-
-.Button.green {
-  box-shadow: none;
+.btn-green {
   @apply .bg-green-5 .text-white;
 }
 
-.Button.red {
-  box-shadow: none;
+.btn-red {
   @apply .bg-red-5 .text-white;
 }

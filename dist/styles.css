@@ -685,8 +685,8 @@ h6 {
   vertical-align: middle;
   cursor: default;
   background-color: hsl(219, 22%, 93%);
-  font-size: .75rem;
-  height: .5rem;
+  font-size: .625rem;
+  height: 1rem;
   padding-left: .5rem;
   padding-right: .5rem;
   color: hsl(219, 16%, 18%);
@@ -695,15 +695,15 @@ h6 {
 /* Sizes */
 
 .Badge.size1 {
-  height: .5rem;
-  font-size: .75rem;
+  height: 1rem;
+  font-size: .625rem;
   padding-left: .5rem;
   padding-right: .5rem;
 }
 
 .Badge.size2 {
-  height: .75rem;
-  font-size: .875rem;
+  height: 1.5rem;
+  font-size: .75rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -712,15 +712,15 @@ h6 {
 
 @media only screen and (min-width: 576px) {
   .Badge.sm-size1 {
-    font-size: .75rem;
-    height: 1rem;
+    font-size: .625rem;
+    height: 2rem;
     padding-left: .5rem;
     padding-right: .5rem;
   }
 
   .Badge.sm-size2 {
-    height: 2rem;
-    font-size: .875rem;
+    height: 3rem;
+    font-size: .75rem;
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -728,15 +728,15 @@ h6 {
 
 @media only screen and (min-width: 768px) {
   .Badge.md-size1 {
-    font-size: .75rem;
-    height: 1rem;
+    font-size: .625rem;
+    height: 2rem;
     padding-left: .5rem;
     padding-right: .5rem;
   }
 
   .Badge.md-size2 {
-    height: 2rem;
-    font-size: .875rem;
+    height: 3rem;
+    font-size: .75rem;
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -744,15 +744,15 @@ h6 {
 
 @media only screen and (min-width: 992px) {
   .Badge.lg-size1 {
-    font-size: .75rem;
-    height: 1rem;
+    font-size: .625rem;
+    height: 2rem;
     padding-left: .5rem;
     padding-right: .5rem;
   }
 
   .Badge.lg-size2 {
-    height: 2rem;
-    font-size: .875rem;
+    height: 3rem;
+    font-size: .75rem;
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -760,15 +760,15 @@ h6 {
 
 @media only screen and (min-width: 1200px) {
   .Badge.xl-size1 {
-    font-size: .75rem;
-    height: 1rem;
+    font-size: .625rem;
+    height: 2rem;
     padding-left: .5rem;
     padding-right: .5rem;
   }
 
   .Badge.xl-size2 {
-    height: 2rem;
-    font-size: .875rem;
+    height: 3rem;
+    font-size: .75rem;
     padding-left: 1rem;
     padding-right: 1rem;
   }
@@ -796,199 +796,78 @@ h6 {
   color: hsl(40, 100%, 12%);
 }
 
-.Button {
+/* Button Base */
+
+.btn {
   position: relative;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -ms-flex-align: center;
       align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  vertical-align: middle;
+  text-align: center;
+  z-index: 0;
+  height: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  background: white;
-  border: none;
+  background-color: hsl(219, 84%, 56%);
+  border-style: none;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .08);
+  border-radius: .25rem;
   cursor: pointer;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  font-weight: 700;
-  -ms-flex-pack: center;
-      justify-content: center;
-  letter-spacing: .6px;
-  outline: none;
   pointer-events: auto;
-  text-align: center;
+  font-size: .875rem;
+  color: hsl(0, 0%, 100%);
+  font-weight: 100;
+  font-family: Oswald, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  letter-spacing: .05em;
   text-decoration: none;
   text-transform: uppercase;
-  transition-property: all;
-  transition-duration: 150ms;
-  transition-timing-function: ease;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
-  vertical-align: middle;
   white-space: nowrap;
-  box-shadow: inset 0 0 0 1px hsl(219, 20%, 82%);
-  border-radius: 4px;
-  z-index: 0;
-  font-family: 'Oswald', sans-serif;
-  background-color: hsl(0, 0%, 100%);
-  font-size: 1rem;
-  height: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  color: hsl(219, 12%, 50%);
+  outline: none;
+  transition-property: all;
+  transition-duration: 150ms;
+  transition-timing-function: ease;
 }
 
-.Button::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 8px;
-  right: 8px;
-  height: 100%;
-  border-radius: 4px;
-  box-shadow: 0 4px 0 0 hsl(219, 22%, 93%);
-  z-index: -1;
-}
+/* Responsive Buttons */
 
-/* Size */
-
-.Button.size1 {
-  height: .75rem;
-  font-size: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.Button.size2 {
-  height: 1rem;
-  font-size: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.Button.size3 {
+.btn-sm {
   height: 1.5rem;
-  font-size: 1.25rem;
+  font-size: .875rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.btn-lg {
+  height: 2.5rem;
+  font-size: 1.125rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
 
-/* Responsive sizes */
-
-@media only screen and (min-width: 576px) {
-  .Button.sm-size1 {
-    height: 3rem;
-    font-size: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .Button.sm-size2 {
-    height: 3rem;
-    font-size: 1.125rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .Button.sm-size3 {
-    height: 2rem;
-    font-size: 1.25rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  .Button.md-size1 {
-    height: 3rem;
-    font-size: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .Button.md-size2 {
-    height: 3rem;
-    font-size: 1.125rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .Button.md-size3 {
-    height: 2rem;
-    font-size: 1.25rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
-@media only screen and (min-width: 992px) {
-  .Button.lg-size1 {
-    height: 3rem;
-    font-size: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .Button.lg-size2 {
-    height: 3rem;
-    font-size: 1.125rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .Button.lg-size3 {
-    height: 2rem;
-    font-size: 1.25rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .Button.xl-size1 {
-    height: 3rem;
-    font-size: 1rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .Button.xl-size2 {
-    height: 3rem;
-    font-size: 1.125rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-
-  .Button.xl-size3 {
-    height: 2rem;
-    font-size: 1.25rem;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
 /* Color */
 
-.Button.white {
-  box-shadow: none;
+.btn-white {
   background-color: hsl(0, 0%, 100%);
   color: hsl(0, 0%, 100%);
 }
 
-.Button.blue {
-  box-shadow: none;
-  background-color: hsl(219, 84%, 56%);
-  color: hsl(0, 0%, 100%);
-}
-
-.Button.green {
-  box-shadow: none;
+.btn-green {
   background-color: hsl(134, 58%, 42%);
   color: hsl(0, 0%, 100%);
 }
 
-.Button.red {
-  box-shadow: none;
+.btn-red {
   background-color: hsl(0, 100%, 65%);
   color: hsl(0, 0%, 100%);
 }
@@ -1192,8 +1071,8 @@ h6 {
 .Switch {
   position: relative;
   display: inline-block;
-  width: 1rem;
-  height: .25rem;
+  width: 2rem;
+  height: .5rem;
 }
 
 .Switch input {
@@ -1220,8 +1099,8 @@ h6 {
   transition: all 100ms ease;
   border-radius: 50%;
   box-shadow: 0 4px 6px rgba(32, 52, 61, .05), 0 1px 3px rgba(0, 0, 0, .05);
-  width: .5rem;
-  height: .5rem;
+  width: 1rem;
+  height: 1rem;
   background-color: hsl(219, 12%, 50%);
 }
 
@@ -1230,7 +1109,7 @@ h6 {
 }
 
 .Switch input:checked + div:before {
-  transform: translateX(.5rem);
+  transform: translateX(1rem);
   background-color: hsl(219, 84%, 56%);
 }
 
@@ -1295,8 +1174,8 @@ h6 {
           user-select: none;
   vertical-align: middle;
   color: hsl(219, 12%, 50%);
-  height: 1rem;
-  width: 1rem;
+  height: 2rem;
+  width: 2rem;
 }
 
 .IconButton:hover {
@@ -1314,18 +1193,18 @@ h6 {
 /* Sizes */
 
 .IconButton.size1 {
-  height: .5rem;
-  width: .5rem;
+  height: 1rem;
+  width: 1rem;
 }
 
 .IconButton.size2 {
-  height: .75rem;
-  width: .75rem;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .IconButton.size3 {
-  height: 1rem;
-  width: 1rem;
+  height: 2rem;
+  width: 2rem;
 }
 
 /* Colors */
@@ -1357,25 +1236,25 @@ h6 {
 
 .Divider {
   height: 2px;
-  width: 1.5rem;
+  width: 2.5rem;
   background-color: hsl(219, 22%, 93%);
 }
 
 /* Sizes */
 
 .Divider.size1 {
-  width: 1.5rem;
+  width: 2.5rem;
 }
 
 .Divider.size2 {
-  width: 2.5rem;
+  width: 3.5rem;
 }
 
 /* Variations */
 
 .Divider.vertical {
   width: 1px;
-  height: .5rem;
+  height: 1rem;
 }
 
 .Card {
@@ -1411,7 +1290,7 @@ h6 {
 .Heading {
   letter-spacing: -.028em;
   margin-left: -.115rem;
-  font-size: 1.875rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 
@@ -1419,37 +1298,37 @@ h6 {
 
 .Heading.size1 {
   margin-left: -.1rem;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 
 .Heading.size2 {
   letter-spacing: -.01em;
   margin-left: -.1rem;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .Heading.size3 {
   letter-spacing: -.028em;
   margin-left: -.115rem;
-  font-size: 1.875rem;
+  font-size: 1.5rem;
 }
 
 .Heading.size4 {
   letter-spacing: -.032em;
   margin-left: -.15rem;
-  font-size: 2.25rem;
+  font-size: 2.125rem;
 }
 
 .Heading.size5 {
   letter-spacing: -.04em;
   margin-left: -.175rem;
-  font-size: 3rem;
+  font-size: 2.75rem;
 }
 
 .Heading.size6 {
   letter-spacing: -.04em;
   margin-left: -.2rem;
-  font-size: 3rem;
+  font-size: 2.75rem;
 }
 
 /* Responsive sizes */
@@ -1457,183 +1336,183 @@ h6 {
 @media only screen and (min-width: 576px) {
   .Heading.sm-size1 {
     margin-left: -.1rem;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 
   .Heading.sm-size2 {
     letter-spacing: -.01em;
     margin-left: -.1rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .Heading.sm-size3 {
     letter-spacing: -.028em;
     margin-left: -.115rem;
-    font-size: 1.875rem;
+    font-size: 1.5rem;
   }
 
   .Heading.sm-size4 {
     letter-spacing: -.032em;
     margin-left: -.15rem;
-    font-size: 2.25rem;
+    font-size: 2.125rem;
   }
 
   .Heading.sm-size5 {
     letter-spacing: -.04em;
     margin-left: -.175rem;
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
 
   .Heading.sm-size6 {
     letter-spacing: -.04em;
     margin-left: -.2rem;
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .Heading.md-size1 {
     margin-left: -.1rem;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 
   .Heading.md-size2 {
     letter-spacing: -.01em;
     margin-left: -.1rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .Heading.md-size3 {
     letter-spacing: -.028em;
     margin-left: -.115rem;
-    font-size: 1.875rem;
+    font-size: 1.5rem;
   }
 
   .Heading.md-size4 {
     letter-spacing: -.032em;
     margin-left: -.15rem;
-    font-size: 2.25rem;
+    font-size: 2.125rem;
   }
 
   .Heading.md-size5 {
     letter-spacing: -.04em;
     margin-left: -.175rem;
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
 
   .Heading.md-size6 {
     letter-spacing: -.04em;
     margin-left: -.2rem;
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .Heading.lg-size1 {
     margin-left: -.1rem;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 
   .Heading.lg-size2 {
     letter-spacing: -.01em;
     margin-left: -.1rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .Heading.lg-size3 {
     letter-spacing: -.028em;
     margin-left: -.115rem;
-    font-size: 1.875rem;
+    font-size: 1.5rem;
   }
 
   .Heading.lg-size4 {
     letter-spacing: -.032em;
     margin-left: -.15rem;
-    font-size: 2.25rem;
+    font-size: 2.125rem;
   }
 
   .Heading.lg-size5 {
     letter-spacing: -.04em;
     margin-left: -.175rem;
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
 
   .Heading.lg-size6 {
     letter-spacing: -.04em;
     margin-left: -.2rem;
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .Heading.xl-size1 {
     margin-left: -.1rem;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 
   .Heading.xl-size2 {
     letter-spacing: -.01em;
     margin-left: -.1rem;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .Heading.xl-size3 {
     letter-spacing: -.028em;
     margin-left: -.115rem;
-    font-size: 1.875rem;
+    font-size: 1.5rem;
   }
 
   .Heading.xl-size4 {
     letter-spacing: -.032em;
     margin-left: -.15rem;
-    font-size: 2.25rem;
+    font-size: 2.125rem;
   }
 
   .Heading.xl-size5 {
     letter-spacing: -.04em;
     margin-left: -.175rem;
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
 
   .Heading.xl-size6 {
     letter-spacing: -.04em;
     margin-left: -.2rem;
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
 }
 
 /* Default */
 
 .Text {
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 /* Sizes */
 
 .Text.size1 {
   letter-spacing: .014em;
-  font-size: .75rem;
+  font-size: .625rem;
 }
 
 .Text.size2 {
   letter-spacing: .008em;
-  font-size: .875rem;
+  font-size: .75rem;
 }
 
 .Text.size3 {
-  font-size: 1rem;
+  font-size: .875rem;
 }
 
 .Text.size4 {
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 .Text.size5 {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 
 .Text.size6 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 /* Responsive sizes */
@@ -1641,112 +1520,112 @@ h6 {
 @media only screen and (min-width: 576px) {
   .Text.sm-size1 {
     letter-spacing: .014em;
-    font-size: .75rem;
+    font-size: .625rem;
   }
 
   .Text.sm-size2 {
     letter-spacing: .008em;
-    font-size: .875rem;
+    font-size: .75rem;
   }
 
   .Text.sm-size3 {
-    font-size: 1rem;
+    font-size: .875rem;
   }
 
   .Text.sm-size4 {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 
   .Text.sm-size5 {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 
   .Text.sm-size6 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .Text.md-size1 {
     letter-spacing: .014em;
-    font-size: .75rem;
+    font-size: .625rem;
   }
 
   .Text.md-size2 {
     letter-spacing: .008em;
-    font-size: .875rem;
+    font-size: .75rem;
   }
 
   .Text.md-size3 {
-    font-size: 1rem;
+    font-size: .875rem;
   }
 
   .Text.md-size4 {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 
   .Text.md-size5 {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 
   .Text.md-size6 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .Text.lg-size1 {
     letter-spacing: .014em;
-    font-size: .75rem;
+    font-size: .625rem;
   }
 
   .Text.lg-size2 {
     letter-spacing: .008em;
-    font-size: .875rem;
+    font-size: .75rem;
   }
 
   .Text.lg-size3 {
-    font-size: 1rem;
+    font-size: .875rem;
   }
 
   .Text.lg-size4 {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 
   .Text.lg-size5 {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 
   .Text.lg-size6 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .Text.xl-size1 {
     letter-spacing: .014em;
-    font-size: .75rem;
+    font-size: .625rem;
   }
 
   .Text.xl-size2 {
     letter-spacing: .008em;
-    font-size: .875rem;
+    font-size: .75rem;
   }
 
   .Text.xl-size3 {
-    font-size: 1rem;
+    font-size: .875rem;
   }
 
   .Text.xl-size4 {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 
   .Text.xl-size5 {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 
   .Text.xl-size6 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -1755,83 +1634,83 @@ h6 {
 .Title {
   text-transform: uppercase;
   letter-spacing: .24em;
-  font-size: 1rem;
+  font-size: .875rem;
 }
 
 /* Sizes */
 
 .Title.size1 {
-  font-size: .875rem;
+  font-size: .75rem;
 }
 
 .Title.size2 {
-  font-size: 1rem;
+  font-size: .875rem;
 }
 
 .Title.size3 {
   letter-spacing: -.02em;
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 /* Responsive sizes */
 
 @media only screen and (min-width: 576px) {
   .Title.sm-size1 {
-    font-size: .875rem;
+    font-size: .75rem;
   }
 
   .Title.sm-size2 {
-    font-size: 1rem;
+    font-size: .875rem;
   }
 
   .Title.sm-size3 {
     letter-spacing: -.02em;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 }
 
 @media only screen and (min-width: 768px) {
   .Title.md-size1 {
-    font-size: .875rem;
+    font-size: .75rem;
   }
 
   .Title.md-size2 {
-    font-size: 1rem;
+    font-size: .875rem;
   }
 
   .Title.md-size3 {
     letter-spacing: -.02em;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 }
 
 @media only screen and (min-width: 992px) {
   .Title.lg-size1 {
-    font-size: .875rem;
+    font-size: .75rem;
   }
 
   .Title.lg-size2 {
-    font-size: 1rem;
+    font-size: .875rem;
   }
 
   .Title.lg-size3 {
     letter-spacing: -.02em;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .Title.xl-size1 {
-    font-size: .875rem;
+    font-size: .75rem;
   }
 
   .Title.xl-size2 {
-    font-size: 1rem;
+    font-size: .875rem;
   }
 
   .Title.xl-size3 {
     letter-spacing: -.02em;
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 }
 
@@ -1846,8 +1725,8 @@ h6 {
       align-items: center;
   overflow: hidden;
   box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, .06);
-  width: 1rem;
-  height: 1rem;
+  width: 2rem;
+  height: 2rem;
   border-radius: 9999px;
   background-color: hsl(219, 34%, 99%);
   cursor: default;
@@ -1857,43 +1736,43 @@ h6 {
           user-select: none;
   text-transform: uppercase;
   color: hsl(219, 12%, 50%);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .avatar-xs {
-  width: .5rem;
-  height: .5rem;
-  font-size: .875rem;
+  width: 1rem;
+  height: 1rem;
+  font-size: .75rem;
 }
 
 .avatar-sm {
-  width: .75rem;
-  height: .75rem;
-  font-size: 1.125rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 1rem;
 }
 
 .avatar-base {
-  width: 1rem;
-  height: 1rem;
-  font-size: 1.5rem;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1.25rem;
 }
 
 .avatar-lg {
-  width: 1.5rem;
-  height: 1.5rem;
-  font-size: 1.875rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
 }
 
 .avatar-xl {
-  width: 2rem;
-  height: 2rem;
-  font-size: 1.875rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
 }
 
 .avatar-2xl {
-  width: 3rem;
-  height: 3rem;
-  font-size: 2.25rem;
+  width: 4rem;
+  height: 4rem;
+  font-size: 2.125rem;
 }
 
 .avatar-grouped {
@@ -1905,7 +1784,7 @@ h6 {
   width: 100%;
   overflow: hidden;
   background-color: hsl(219, 22%, 93%);
-  height: .25rem;
+  height: .5rem;
   border-radius: 9999px;
 }
 
@@ -1920,11 +1799,11 @@ h6 {
 /* Sizes */
 
 .Progress.size1 {
-  height: .25rem;
+  height: .5rem;
 }
 
 .Progress.size2 {
-  height: .5rem;
+  height: 1rem;
 }
 
 /* Colors */
@@ -1965,8 +1844,8 @@ h6 {
   border-color: hsl(219, 16%, 76%);
   transition: all 100ms ease;
   color: hsl(0, 0%, 100%);
-  width: .5rem;
-  height: .5rem;
+  width: 1rem;
+  height: 1rem;
   background-color: hsl(0, 0%, 100%);
   border-radius: .125rem;
 }
@@ -2034,8 +1913,8 @@ h6 {
   border-style: solid;
   border-color: hsl(219, 16%, 76%);
   transition: all 100ms ease;
-  width: .5rem;
-  height: .5rem;
+  width: 1rem;
+  height: 1rem;
   background-color: hsl(0, 0%, 100%);
   border-radius: .25rem;
 }
@@ -2077,11 +1956,11 @@ h6 {
   transition-timing-function: linear;
   font-family: inherit;
   color: inherit;
-  line-height: 1rem;
-  height: 1rem;
+  line-height: 2rem;
+  height: 2rem;
   padding-left: .5rem;
   background-color: hsl(0, 0%, 100%);
-  font-size: 1rem;
+  font-size: .875rem;
   border-radius: .25rem;
 }
 
@@ -2111,17 +1990,17 @@ h6 {
 /* Sizes */
 
 .Input.size1 {
-  height: .75rem;
+  height: 1.5rem;
   padding-left: .5rem;
 }
 
 .Input.size2 {
-  height: 1rem;
+  height: 2rem;
   padding-left: .5rem;
 }
 
 .Input.size3 {
-  height: 1.5rem;
+  height: 2.5rem;
   padding-left: 1rem;
 }
 
@@ -2163,9 +2042,9 @@ h6 {
 
 .Select {
   width: 100%;
-  height: 1rem;
+  height: 2rem;
   background-color: hsl(219, 22%, 93%);
-  font-size: 1rem;
+  font-size: .875rem;
 }
 
 .Select:focus {
@@ -2178,15 +2057,15 @@ h6 {
 /* Sizes */
 
 .Select.size1 {
-  height: .75rem;
+  height: 1.5rem;
 }
 
 .Select.size2 {
-  height: 1rem;
+  height: 2rem;
 }
 
 .Select.size3 {
-  height: 1.5rem;
+  height: 2.5rem;
 }
 
 .Table {
@@ -2195,7 +2074,7 @@ h6 {
   width: 100%;
   max-width: 100%;
   text-align: left;
-  font-size: 1rem;
+  font-size: .875rem;
 }
 
 .Table th,
@@ -2233,8 +2112,8 @@ h6 {
   text-align: center;
   transition: all 100ms ease;
   white-space: nowrap;
-  height: 1rem;
-  font-size: 1rem;
+  height: 2rem;
+  font-size: .875rem;
   padding-left: 1rem;
   padding-right: 1rem;
   color: hsl(219, 12%, 50%);
@@ -2252,15 +2131,15 @@ h6 {
 /* Sizes */
 
 .Tab.size1 {
-  height: 1rem;
-  font-size: 1rem;
+  height: 2rem;
+  font-size: .875rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
 .Tab.size2 {
-  height: 2rem;
-  font-size: 1.125rem;
+  height: 3rem;
+  font-size: 1rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -2317,8 +2196,8 @@ h6 {
   transition: all 100ms ease;
   white-space: nowrap;
   border-radius: undefined undefined 0 0;
-  height: 1rem;
-  font-size: .875rem;
+  height: 2rem;
+  font-size: .75rem;
   color: hsl(219, 12%, 50%);
   padding-left: 1rem;
   padding-right: 1rem;
@@ -2337,15 +2216,15 @@ h6 {
 /* Sizes */
 
 .BubbleTab.size1 {
-  height: 1rem;
-  font-size: .875rem;
+  height: 2rem;
+  font-size: .75rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
 .BubbleTab.size2 {
-  height: 2rem;
-  font-size: 1rem;
+  height: 3rem;
+  font-size: .875rem;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -2906,13 +2785,13 @@ h6 {
   padding-right: 1rem;
   padding-top: .5rem;
   padding-bottom: .5rem;
-  min-height: 1rem;
+  min-height: 2rem;
 }
 
 /* Sizes */
 
 .ListItem.size2 {
-  min-height: 1.5rem;
+  min-height: 2.5rem;
 }
 
 /* Props */
@@ -4431,6 +4310,10 @@ h6 {
   font-family: Officina Serif ITC Pro, Georgia, Times, Times New Roman, serif;
 }
 
+.font-narrow {
+  font-family: Oswald, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
 .font-sans {
   font-family: Gotham Narrow SSm A, Gotham Narrow SSm B, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -4468,39 +4351,39 @@ h6 {
 }
 
 .h-1 {
-  height: .25rem;
-}
-
-.h-2 {
   height: .5rem;
 }
 
-.h-3 {
-  height: .75rem;
-}
-
-.h-4 {
+.h-2 {
   height: 1rem;
 }
 
-.h-5 {
+.h-3 {
   height: 1.5rem;
 }
 
-.h-6 {
+.h-4 {
   height: 2rem;
 }
 
-.h-7 {
+.h-5 {
   height: 2.5rem;
 }
 
-.h-8 {
+.h-6 {
   height: 3rem;
 }
 
-.h-9 {
+.h-7 {
+  height: 3.5rem;
+}
+
+.h-8 {
   height: 4rem;
+}
+
+.h-9 {
+  height: 5rem;
 }
 
 .h-auto {
@@ -4966,39 +4849,39 @@ h6 {
 }
 
 .min-h-1 {
-  min-height: .25rem;
-}
-
-.min-h-2 {
   min-height: .5rem;
 }
 
-.min-h-3 {
-  min-height: .75rem;
-}
-
-.min-h-4 {
+.min-h-2 {
   min-height: 1rem;
 }
 
-.min-h-5 {
+.min-h-3 {
   min-height: 1.5rem;
 }
 
-.min-h-6 {
+.min-h-4 {
   min-height: 2rem;
 }
 
-.min-h-7 {
+.min-h-5 {
   min-height: 2.5rem;
 }
 
-.min-h-8 {
+.min-h-6 {
   min-height: 3rem;
 }
 
-.min-h-9 {
+.min-h-7 {
+  min-height: 3.5rem;
+}
+
+.min-h-8 {
   min-height: 4rem;
+}
+
+.min-h-9 {
+  min-height: 5rem;
 }
 
 .min-h-px {
@@ -5018,39 +4901,39 @@ h6 {
 }
 
 .min-w-1 {
-  min-width: .25rem;
-}
-
-.min-w-2 {
   min-width: .5rem;
 }
 
-.min-w-3 {
-  min-width: .75rem;
-}
-
-.min-w-4 {
+.min-w-2 {
   min-width: 1rem;
 }
 
-.min-w-5 {
+.min-w-3 {
   min-width: 1.5rem;
 }
 
-.min-w-6 {
+.min-w-4 {
   min-width: 2rem;
 }
 
-.min-w-7 {
+.min-w-5 {
   min-width: 2.5rem;
 }
 
-.min-w-8 {
+.min-w-6 {
   min-width: 3rem;
 }
 
-.min-w-9 {
+.min-w-7 {
+  min-width: 3.5rem;
+}
+
+.min-w-8 {
   min-width: 4rem;
+}
+
+.min-w-9 {
+  min-width: 5rem;
 }
 
 .min-w-px {
@@ -6311,39 +6194,39 @@ h6 {
 }
 
 .text-1 {
-  font-size: .75rem;
+  font-size: .625rem;
 }
 
 .text-2 {
-  font-size: .875rem;
+  font-size: .75rem;
 }
 
 .text-3 {
-  font-size: 1rem;
+  font-size: .875rem;
 }
 
 .text-4 {
-  font-size: 1.125rem;
+  font-size: 1rem;
 }
 
 .text-5 {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
 }
 
 .text-6 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .text-7 {
-  font-size: 1.875rem;
+  font-size: 1.5rem;
 }
 
 .text-8 {
-  font-size: 2.25rem;
+  font-size: 2.125rem;
 }
 
 .text-9 {
-  font-size: 3rem;
+  font-size: 2.75rem;
 }
 
 .text-base {
@@ -6539,39 +6422,39 @@ h6 {
 }
 
 .w-1 {
-  width: .25rem;
-}
-
-.w-2 {
   width: .5rem;
 }
 
-.w-3 {
-  width: .75rem;
-}
-
-.w-4 {
+.w-2 {
   width: 1rem;
 }
 
-.w-5 {
+.w-3 {
   width: 1.5rem;
 }
 
-.w-6 {
+.w-4 {
   width: 2rem;
 }
 
-.w-7 {
+.w-5 {
   width: 2.5rem;
 }
 
-.w-8 {
+.w-6 {
   width: 3rem;
 }
 
-.w-9 {
+.w-7 {
+  width: 3.5rem;
+}
+
+.w-8 {
   width: 4rem;
+}
+
+.w-9 {
+  width: 5rem;
 }
 
 .w-auto {
@@ -6679,40 +6562,54 @@ h6 {
 }
 
 @media (min-width: 576px) {
-  .sm\:avatar-xs {
-    width: .5rem;
-    height: .5rem;
+  .sm\:btn-sm {
+    height: 1.5rem;
     font-size: .875rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .sm\:btn-lg {
+    height: 2.5rem;
+    font-size: 1.125rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .sm\:avatar-xs {
+    width: 1rem;
+    height: 1rem;
+    font-size: .75rem;
   }
 
   .sm\:avatar-sm {
-    width: .75rem;
-    height: .75rem;
-    font-size: 1.125rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1rem;
   }
 
   .sm\:avatar-base {
-    width: 1rem;
-    height: 1rem;
-    font-size: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.25rem;
   }
 
   .sm\:avatar-lg {
-    width: 1.5rem;
-    height: 1.5rem;
-    font-size: 1.875rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
   }
 
   .sm\:avatar-xl {
-    width: 2rem;
-    height: 2rem;
-    font-size: 1.875rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
   }
 
   .sm\:avatar-2xl {
-    width: 3rem;
-    height: 3rem;
-    font-size: 2.25rem;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2.125rem;
   }
 
   .sm\:list-reset {
@@ -8128,6 +8025,10 @@ h6 {
     font-family: Officina Serif ITC Pro, Georgia, Times, Times New Roman, serif;
   }
 
+  .sm\:font-narrow {
+    font-family: Oswald, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  }
+
   .sm\:font-sans {
     font-family: Gotham Narrow SSm A, Gotham Narrow SSm B, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
@@ -8165,39 +8066,39 @@ h6 {
   }
 
   .sm\:h-1 {
-    height: .25rem;
-  }
-
-  .sm\:h-2 {
     height: .5rem;
   }
 
-  .sm\:h-3 {
-    height: .75rem;
-  }
-
-  .sm\:h-4 {
+  .sm\:h-2 {
     height: 1rem;
   }
 
-  .sm\:h-5 {
+  .sm\:h-3 {
     height: 1.5rem;
   }
 
-  .sm\:h-6 {
+  .sm\:h-4 {
     height: 2rem;
   }
 
-  .sm\:h-7 {
+  .sm\:h-5 {
     height: 2.5rem;
   }
 
-  .sm\:h-8 {
+  .sm\:h-6 {
     height: 3rem;
   }
 
-  .sm\:h-9 {
+  .sm\:h-7 {
+    height: 3.5rem;
+  }
+
+  .sm\:h-8 {
     height: 4rem;
+  }
+
+  .sm\:h-9 {
+    height: 5rem;
   }
 
   .sm\:h-auto {
@@ -8663,39 +8564,39 @@ h6 {
   }
 
   .sm\:min-h-1 {
-    min-height: .25rem;
-  }
-
-  .sm\:min-h-2 {
     min-height: .5rem;
   }
 
-  .sm\:min-h-3 {
-    min-height: .75rem;
-  }
-
-  .sm\:min-h-4 {
+  .sm\:min-h-2 {
     min-height: 1rem;
   }
 
-  .sm\:min-h-5 {
+  .sm\:min-h-3 {
     min-height: 1.5rem;
   }
 
-  .sm\:min-h-6 {
+  .sm\:min-h-4 {
     min-height: 2rem;
   }
 
-  .sm\:min-h-7 {
+  .sm\:min-h-5 {
     min-height: 2.5rem;
   }
 
-  .sm\:min-h-8 {
+  .sm\:min-h-6 {
     min-height: 3rem;
   }
 
-  .sm\:min-h-9 {
+  .sm\:min-h-7 {
+    min-height: 3.5rem;
+  }
+
+  .sm\:min-h-8 {
     min-height: 4rem;
+  }
+
+  .sm\:min-h-9 {
+    min-height: 5rem;
   }
 
   .sm\:min-h-px {
@@ -8715,39 +8616,39 @@ h6 {
   }
 
   .sm\:min-w-1 {
-    min-width: .25rem;
-  }
-
-  .sm\:min-w-2 {
     min-width: .5rem;
   }
 
-  .sm\:min-w-3 {
-    min-width: .75rem;
-  }
-
-  .sm\:min-w-4 {
+  .sm\:min-w-2 {
     min-width: 1rem;
   }
 
-  .sm\:min-w-5 {
+  .sm\:min-w-3 {
     min-width: 1.5rem;
   }
 
-  .sm\:min-w-6 {
+  .sm\:min-w-4 {
     min-width: 2rem;
   }
 
-  .sm\:min-w-7 {
+  .sm\:min-w-5 {
     min-width: 2.5rem;
   }
 
-  .sm\:min-w-8 {
+  .sm\:min-w-6 {
     min-width: 3rem;
   }
 
-  .sm\:min-w-9 {
+  .sm\:min-w-7 {
+    min-width: 3.5rem;
+  }
+
+  .sm\:min-w-8 {
     min-width: 4rem;
+  }
+
+  .sm\:min-w-9 {
+    min-width: 5rem;
   }
 
   .sm\:min-w-px {
@@ -10000,39 +9901,39 @@ h6 {
   }
 
   .sm\:text-1 {
-    font-size: .75rem;
+    font-size: .625rem;
   }
 
   .sm\:text-2 {
-    font-size: .875rem;
+    font-size: .75rem;
   }
 
   .sm\:text-3 {
-    font-size: 1rem;
+    font-size: .875rem;
   }
 
   .sm\:text-4 {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 
   .sm\:text-5 {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 
   .sm\:text-6 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .sm\:text-7 {
-    font-size: 1.875rem;
+    font-size: 1.5rem;
   }
 
   .sm\:text-8 {
-    font-size: 2.25rem;
+    font-size: 2.125rem;
   }
 
   .sm\:text-9 {
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
 
   .sm\:text-base {
@@ -10228,39 +10129,39 @@ h6 {
   }
 
   .sm\:w-1 {
-    width: .25rem;
-  }
-
-  .sm\:w-2 {
     width: .5rem;
   }
 
-  .sm\:w-3 {
-    width: .75rem;
-  }
-
-  .sm\:w-4 {
+  .sm\:w-2 {
     width: 1rem;
   }
 
-  .sm\:w-5 {
+  .sm\:w-3 {
     width: 1.5rem;
   }
 
-  .sm\:w-6 {
+  .sm\:w-4 {
     width: 2rem;
   }
 
-  .sm\:w-7 {
+  .sm\:w-5 {
     width: 2.5rem;
   }
 
-  .sm\:w-8 {
+  .sm\:w-6 {
     width: 3rem;
   }
 
-  .sm\:w-9 {
+  .sm\:w-7 {
+    width: 3.5rem;
+  }
+
+  .sm\:w-8 {
     width: 4rem;
+  }
+
+  .sm\:w-9 {
+    width: 5rem;
   }
 
   .sm\:w-auto {
@@ -10369,40 +10270,54 @@ h6 {
 }
 
 @media (min-width: 768px) {
-  .md\:avatar-xs {
-    width: .5rem;
-    height: .5rem;
+  .md\:btn-sm {
+    height: 1.5rem;
     font-size: .875rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .md\:btn-lg {
+    height: 2.5rem;
+    font-size: 1.125rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .md\:avatar-xs {
+    width: 1rem;
+    height: 1rem;
+    font-size: .75rem;
   }
 
   .md\:avatar-sm {
-    width: .75rem;
-    height: .75rem;
-    font-size: 1.125rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1rem;
   }
 
   .md\:avatar-base {
-    width: 1rem;
-    height: 1rem;
-    font-size: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.25rem;
   }
 
   .md\:avatar-lg {
-    width: 1.5rem;
-    height: 1.5rem;
-    font-size: 1.875rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
   }
 
   .md\:avatar-xl {
-    width: 2rem;
-    height: 2rem;
-    font-size: 1.875rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
   }
 
   .md\:avatar-2xl {
-    width: 3rem;
-    height: 3rem;
-    font-size: 2.25rem;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2.125rem;
   }
 
   .md\:list-reset {
@@ -11818,6 +11733,10 @@ h6 {
     font-family: Officina Serif ITC Pro, Georgia, Times, Times New Roman, serif;
   }
 
+  .md\:font-narrow {
+    font-family: Oswald, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  }
+
   .md\:font-sans {
     font-family: Gotham Narrow SSm A, Gotham Narrow SSm B, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
@@ -11855,39 +11774,39 @@ h6 {
   }
 
   .md\:h-1 {
-    height: .25rem;
-  }
-
-  .md\:h-2 {
     height: .5rem;
   }
 
-  .md\:h-3 {
-    height: .75rem;
-  }
-
-  .md\:h-4 {
+  .md\:h-2 {
     height: 1rem;
   }
 
-  .md\:h-5 {
+  .md\:h-3 {
     height: 1.5rem;
   }
 
-  .md\:h-6 {
+  .md\:h-4 {
     height: 2rem;
   }
 
-  .md\:h-7 {
+  .md\:h-5 {
     height: 2.5rem;
   }
 
-  .md\:h-8 {
+  .md\:h-6 {
     height: 3rem;
   }
 
-  .md\:h-9 {
+  .md\:h-7 {
+    height: 3.5rem;
+  }
+
+  .md\:h-8 {
     height: 4rem;
+  }
+
+  .md\:h-9 {
+    height: 5rem;
   }
 
   .md\:h-auto {
@@ -12353,39 +12272,39 @@ h6 {
   }
 
   .md\:min-h-1 {
-    min-height: .25rem;
-  }
-
-  .md\:min-h-2 {
     min-height: .5rem;
   }
 
-  .md\:min-h-3 {
-    min-height: .75rem;
-  }
-
-  .md\:min-h-4 {
+  .md\:min-h-2 {
     min-height: 1rem;
   }
 
-  .md\:min-h-5 {
+  .md\:min-h-3 {
     min-height: 1.5rem;
   }
 
-  .md\:min-h-6 {
+  .md\:min-h-4 {
     min-height: 2rem;
   }
 
-  .md\:min-h-7 {
+  .md\:min-h-5 {
     min-height: 2.5rem;
   }
 
-  .md\:min-h-8 {
+  .md\:min-h-6 {
     min-height: 3rem;
   }
 
-  .md\:min-h-9 {
+  .md\:min-h-7 {
+    min-height: 3.5rem;
+  }
+
+  .md\:min-h-8 {
     min-height: 4rem;
+  }
+
+  .md\:min-h-9 {
+    min-height: 5rem;
   }
 
   .md\:min-h-px {
@@ -12405,39 +12324,39 @@ h6 {
   }
 
   .md\:min-w-1 {
-    min-width: .25rem;
-  }
-
-  .md\:min-w-2 {
     min-width: .5rem;
   }
 
-  .md\:min-w-3 {
-    min-width: .75rem;
-  }
-
-  .md\:min-w-4 {
+  .md\:min-w-2 {
     min-width: 1rem;
   }
 
-  .md\:min-w-5 {
+  .md\:min-w-3 {
     min-width: 1.5rem;
   }
 
-  .md\:min-w-6 {
+  .md\:min-w-4 {
     min-width: 2rem;
   }
 
-  .md\:min-w-7 {
+  .md\:min-w-5 {
     min-width: 2.5rem;
   }
 
-  .md\:min-w-8 {
+  .md\:min-w-6 {
     min-width: 3rem;
   }
 
-  .md\:min-w-9 {
+  .md\:min-w-7 {
+    min-width: 3.5rem;
+  }
+
+  .md\:min-w-8 {
     min-width: 4rem;
+  }
+
+  .md\:min-w-9 {
+    min-width: 5rem;
   }
 
   .md\:min-w-px {
@@ -13690,39 +13609,39 @@ h6 {
   }
 
   .md\:text-1 {
-    font-size: .75rem;
+    font-size: .625rem;
   }
 
   .md\:text-2 {
-    font-size: .875rem;
+    font-size: .75rem;
   }
 
   .md\:text-3 {
-    font-size: 1rem;
+    font-size: .875rem;
   }
 
   .md\:text-4 {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 
   .md\:text-5 {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 
   .md\:text-6 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .md\:text-7 {
-    font-size: 1.875rem;
+    font-size: 1.5rem;
   }
 
   .md\:text-8 {
-    font-size: 2.25rem;
+    font-size: 2.125rem;
   }
 
   .md\:text-9 {
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
 
   .md\:text-base {
@@ -13918,39 +13837,39 @@ h6 {
   }
 
   .md\:w-1 {
-    width: .25rem;
-  }
-
-  .md\:w-2 {
     width: .5rem;
   }
 
-  .md\:w-3 {
-    width: .75rem;
-  }
-
-  .md\:w-4 {
+  .md\:w-2 {
     width: 1rem;
   }
 
-  .md\:w-5 {
+  .md\:w-3 {
     width: 1.5rem;
   }
 
-  .md\:w-6 {
+  .md\:w-4 {
     width: 2rem;
   }
 
-  .md\:w-7 {
+  .md\:w-5 {
     width: 2.5rem;
   }
 
-  .md\:w-8 {
+  .md\:w-6 {
     width: 3rem;
   }
 
-  .md\:w-9 {
+  .md\:w-7 {
+    width: 3.5rem;
+  }
+
+  .md\:w-8 {
     width: 4rem;
+  }
+
+  .md\:w-9 {
+    width: 5rem;
   }
 
   .md\:w-auto {
@@ -14059,40 +13978,54 @@ h6 {
 }
 
 @media (min-width: 992px) {
-  .lg\:avatar-xs {
-    width: .5rem;
-    height: .5rem;
+  .lg\:btn-sm {
+    height: 1.5rem;
     font-size: .875rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .lg\:btn-lg {
+    height: 2.5rem;
+    font-size: 1.125rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .lg\:avatar-xs {
+    width: 1rem;
+    height: 1rem;
+    font-size: .75rem;
   }
 
   .lg\:avatar-sm {
-    width: .75rem;
-    height: .75rem;
-    font-size: 1.125rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1rem;
   }
 
   .lg\:avatar-base {
-    width: 1rem;
-    height: 1rem;
-    font-size: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.25rem;
   }
 
   .lg\:avatar-lg {
-    width: 1.5rem;
-    height: 1.5rem;
-    font-size: 1.875rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
   }
 
   .lg\:avatar-xl {
-    width: 2rem;
-    height: 2rem;
-    font-size: 1.875rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
   }
 
   .lg\:avatar-2xl {
-    width: 3rem;
-    height: 3rem;
-    font-size: 2.25rem;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2.125rem;
   }
 
   .lg\:list-reset {
@@ -15508,6 +15441,10 @@ h6 {
     font-family: Officina Serif ITC Pro, Georgia, Times, Times New Roman, serif;
   }
 
+  .lg\:font-narrow {
+    font-family: Oswald, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  }
+
   .lg\:font-sans {
     font-family: Gotham Narrow SSm A, Gotham Narrow SSm B, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
@@ -15545,39 +15482,39 @@ h6 {
   }
 
   .lg\:h-1 {
-    height: .25rem;
-  }
-
-  .lg\:h-2 {
     height: .5rem;
   }
 
-  .lg\:h-3 {
-    height: .75rem;
-  }
-
-  .lg\:h-4 {
+  .lg\:h-2 {
     height: 1rem;
   }
 
-  .lg\:h-5 {
+  .lg\:h-3 {
     height: 1.5rem;
   }
 
-  .lg\:h-6 {
+  .lg\:h-4 {
     height: 2rem;
   }
 
-  .lg\:h-7 {
+  .lg\:h-5 {
     height: 2.5rem;
   }
 
-  .lg\:h-8 {
+  .lg\:h-6 {
     height: 3rem;
   }
 
-  .lg\:h-9 {
+  .lg\:h-7 {
+    height: 3.5rem;
+  }
+
+  .lg\:h-8 {
     height: 4rem;
+  }
+
+  .lg\:h-9 {
+    height: 5rem;
   }
 
   .lg\:h-auto {
@@ -16043,39 +15980,39 @@ h6 {
   }
 
   .lg\:min-h-1 {
-    min-height: .25rem;
-  }
-
-  .lg\:min-h-2 {
     min-height: .5rem;
   }
 
-  .lg\:min-h-3 {
-    min-height: .75rem;
-  }
-
-  .lg\:min-h-4 {
+  .lg\:min-h-2 {
     min-height: 1rem;
   }
 
-  .lg\:min-h-5 {
+  .lg\:min-h-3 {
     min-height: 1.5rem;
   }
 
-  .lg\:min-h-6 {
+  .lg\:min-h-4 {
     min-height: 2rem;
   }
 
-  .lg\:min-h-7 {
+  .lg\:min-h-5 {
     min-height: 2.5rem;
   }
 
-  .lg\:min-h-8 {
+  .lg\:min-h-6 {
     min-height: 3rem;
   }
 
-  .lg\:min-h-9 {
+  .lg\:min-h-7 {
+    min-height: 3.5rem;
+  }
+
+  .lg\:min-h-8 {
     min-height: 4rem;
+  }
+
+  .lg\:min-h-9 {
+    min-height: 5rem;
   }
 
   .lg\:min-h-px {
@@ -16095,39 +16032,39 @@ h6 {
   }
 
   .lg\:min-w-1 {
-    min-width: .25rem;
-  }
-
-  .lg\:min-w-2 {
     min-width: .5rem;
   }
 
-  .lg\:min-w-3 {
-    min-width: .75rem;
-  }
-
-  .lg\:min-w-4 {
+  .lg\:min-w-2 {
     min-width: 1rem;
   }
 
-  .lg\:min-w-5 {
+  .lg\:min-w-3 {
     min-width: 1.5rem;
   }
 
-  .lg\:min-w-6 {
+  .lg\:min-w-4 {
     min-width: 2rem;
   }
 
-  .lg\:min-w-7 {
+  .lg\:min-w-5 {
     min-width: 2.5rem;
   }
 
-  .lg\:min-w-8 {
+  .lg\:min-w-6 {
     min-width: 3rem;
   }
 
-  .lg\:min-w-9 {
+  .lg\:min-w-7 {
+    min-width: 3.5rem;
+  }
+
+  .lg\:min-w-8 {
     min-width: 4rem;
+  }
+
+  .lg\:min-w-9 {
+    min-width: 5rem;
   }
 
   .lg\:min-w-px {
@@ -17380,39 +17317,39 @@ h6 {
   }
 
   .lg\:text-1 {
-    font-size: .75rem;
+    font-size: .625rem;
   }
 
   .lg\:text-2 {
-    font-size: .875rem;
+    font-size: .75rem;
   }
 
   .lg\:text-3 {
-    font-size: 1rem;
+    font-size: .875rem;
   }
 
   .lg\:text-4 {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 
   .lg\:text-5 {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 
   .lg\:text-6 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .lg\:text-7 {
-    font-size: 1.875rem;
+    font-size: 1.5rem;
   }
 
   .lg\:text-8 {
-    font-size: 2.25rem;
+    font-size: 2.125rem;
   }
 
   .lg\:text-9 {
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
 
   .lg\:text-base {
@@ -17608,39 +17545,39 @@ h6 {
   }
 
   .lg\:w-1 {
-    width: .25rem;
-  }
-
-  .lg\:w-2 {
     width: .5rem;
   }
 
-  .lg\:w-3 {
-    width: .75rem;
-  }
-
-  .lg\:w-4 {
+  .lg\:w-2 {
     width: 1rem;
   }
 
-  .lg\:w-5 {
+  .lg\:w-3 {
     width: 1.5rem;
   }
 
-  .lg\:w-6 {
+  .lg\:w-4 {
     width: 2rem;
   }
 
-  .lg\:w-7 {
+  .lg\:w-5 {
     width: 2.5rem;
   }
 
-  .lg\:w-8 {
+  .lg\:w-6 {
     width: 3rem;
   }
 
-  .lg\:w-9 {
+  .lg\:w-7 {
+    width: 3.5rem;
+  }
+
+  .lg\:w-8 {
     width: 4rem;
+  }
+
+  .lg\:w-9 {
+    width: 5rem;
   }
 
   .lg\:w-auto {
@@ -17749,40 +17686,54 @@ h6 {
 }
 
 @media (min-width: 1200px) {
-  .xl\:avatar-xs {
-    width: .5rem;
-    height: .5rem;
+  .xl\:btn-sm {
+    height: 1.5rem;
     font-size: .875rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .xl\:btn-lg {
+    height: 2.5rem;
+    font-size: 1.125rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .xl\:avatar-xs {
+    width: 1rem;
+    height: 1rem;
+    font-size: .75rem;
   }
 
   .xl\:avatar-sm {
-    width: .75rem;
-    height: .75rem;
-    font-size: 1.125rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    font-size: 1rem;
   }
 
   .xl\:avatar-base {
-    width: 1rem;
-    height: 1rem;
-    font-size: 1.5rem;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.25rem;
   }
 
   .xl\:avatar-lg {
-    width: 1.5rem;
-    height: 1.5rem;
-    font-size: 1.875rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.5rem;
   }
 
   .xl\:avatar-xl {
-    width: 2rem;
-    height: 2rem;
-    font-size: 1.875rem;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
   }
 
   .xl\:avatar-2xl {
-    width: 3rem;
-    height: 3rem;
-    font-size: 2.25rem;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2.125rem;
   }
 
   .xl\:list-reset {
@@ -19198,6 +19149,10 @@ h6 {
     font-family: Officina Serif ITC Pro, Georgia, Times, Times New Roman, serif;
   }
 
+  .xl\:font-narrow {
+    font-family: Oswald, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  }
+
   .xl\:font-sans {
     font-family: Gotham Narrow SSm A, Gotham Narrow SSm B, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   }
@@ -19235,39 +19190,39 @@ h6 {
   }
 
   .xl\:h-1 {
-    height: .25rem;
-  }
-
-  .xl\:h-2 {
     height: .5rem;
   }
 
-  .xl\:h-3 {
-    height: .75rem;
-  }
-
-  .xl\:h-4 {
+  .xl\:h-2 {
     height: 1rem;
   }
 
-  .xl\:h-5 {
+  .xl\:h-3 {
     height: 1.5rem;
   }
 
-  .xl\:h-6 {
+  .xl\:h-4 {
     height: 2rem;
   }
 
-  .xl\:h-7 {
+  .xl\:h-5 {
     height: 2.5rem;
   }
 
-  .xl\:h-8 {
+  .xl\:h-6 {
     height: 3rem;
   }
 
-  .xl\:h-9 {
+  .xl\:h-7 {
+    height: 3.5rem;
+  }
+
+  .xl\:h-8 {
     height: 4rem;
+  }
+
+  .xl\:h-9 {
+    height: 5rem;
   }
 
   .xl\:h-auto {
@@ -19733,39 +19688,39 @@ h6 {
   }
 
   .xl\:min-h-1 {
-    min-height: .25rem;
-  }
-
-  .xl\:min-h-2 {
     min-height: .5rem;
   }
 
-  .xl\:min-h-3 {
-    min-height: .75rem;
-  }
-
-  .xl\:min-h-4 {
+  .xl\:min-h-2 {
     min-height: 1rem;
   }
 
-  .xl\:min-h-5 {
+  .xl\:min-h-3 {
     min-height: 1.5rem;
   }
 
-  .xl\:min-h-6 {
+  .xl\:min-h-4 {
     min-height: 2rem;
   }
 
-  .xl\:min-h-7 {
+  .xl\:min-h-5 {
     min-height: 2.5rem;
   }
 
-  .xl\:min-h-8 {
+  .xl\:min-h-6 {
     min-height: 3rem;
   }
 
-  .xl\:min-h-9 {
+  .xl\:min-h-7 {
+    min-height: 3.5rem;
+  }
+
+  .xl\:min-h-8 {
     min-height: 4rem;
+  }
+
+  .xl\:min-h-9 {
+    min-height: 5rem;
   }
 
   .xl\:min-h-px {
@@ -19785,39 +19740,39 @@ h6 {
   }
 
   .xl\:min-w-1 {
-    min-width: .25rem;
-  }
-
-  .xl\:min-w-2 {
     min-width: .5rem;
   }
 
-  .xl\:min-w-3 {
-    min-width: .75rem;
-  }
-
-  .xl\:min-w-4 {
+  .xl\:min-w-2 {
     min-width: 1rem;
   }
 
-  .xl\:min-w-5 {
+  .xl\:min-w-3 {
     min-width: 1.5rem;
   }
 
-  .xl\:min-w-6 {
+  .xl\:min-w-4 {
     min-width: 2rem;
   }
 
-  .xl\:min-w-7 {
+  .xl\:min-w-5 {
     min-width: 2.5rem;
   }
 
-  .xl\:min-w-8 {
+  .xl\:min-w-6 {
     min-width: 3rem;
   }
 
-  .xl\:min-w-9 {
+  .xl\:min-w-7 {
+    min-width: 3.5rem;
+  }
+
+  .xl\:min-w-8 {
     min-width: 4rem;
+  }
+
+  .xl\:min-w-9 {
+    min-width: 5rem;
   }
 
   .xl\:min-w-px {
@@ -21070,39 +21025,39 @@ h6 {
   }
 
   .xl\:text-1 {
-    font-size: .75rem;
+    font-size: .625rem;
   }
 
   .xl\:text-2 {
-    font-size: .875rem;
+    font-size: .75rem;
   }
 
   .xl\:text-3 {
-    font-size: 1rem;
+    font-size: .875rem;
   }
 
   .xl\:text-4 {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 
   .xl\:text-5 {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
 
   .xl\:text-6 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 
   .xl\:text-7 {
-    font-size: 1.875rem;
+    font-size: 1.5rem;
   }
 
   .xl\:text-8 {
-    font-size: 2.25rem;
+    font-size: 2.125rem;
   }
 
   .xl\:text-9 {
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
 
   .xl\:text-base {
@@ -21298,39 +21253,39 @@ h6 {
   }
 
   .xl\:w-1 {
-    width: .25rem;
-  }
-
-  .xl\:w-2 {
     width: .5rem;
   }
 
-  .xl\:w-3 {
-    width: .75rem;
-  }
-
-  .xl\:w-4 {
+  .xl\:w-2 {
     width: 1rem;
   }
 
-  .xl\:w-5 {
+  .xl\:w-3 {
     width: 1.5rem;
   }
 
-  .xl\:w-6 {
+  .xl\:w-4 {
     width: 2rem;
   }
 
-  .xl\:w-7 {
+  .xl\:w-5 {
     width: 2.5rem;
   }
 
-  .xl\:w-8 {
+  .xl\:w-6 {
     width: 3rem;
   }
 
-  .xl\:w-9 {
+  .xl\:w-7 {
+    width: 3.5rem;
+  }
+
+  .xl\:w-8 {
     width: 4rem;
+  }
+
+  .xl\:w-9 {
+    width: 5rem;
   }
 
   .xl\:w-auto {
