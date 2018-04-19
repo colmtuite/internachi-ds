@@ -2,26 +2,26 @@
 
 .Select {
     width: 100%;
-    @apply .h-8 .bg-grey-light .text-3;
+    @apply .h-4 .bg-grey-300 .text-3;
 }
 
 .Select:focus {
     outline-width: 1px;
     outline-style: dashed;
-    outline-color: config('colors.blue');
+    outline-color: config('colors.blue-500');
     outline-offset: 2px;
 }
 
 /* Sizes */
 
 .Select.size1 {
-    @apply .h-8;
+    @apply .h-3;
 }
 
 .Select.size2 {
-    @apply .h-10;
+    @apply .h-4;
 }
 
 .Select.size3 {
-    @apply .h-12;
+    @apply .h-5;
 }

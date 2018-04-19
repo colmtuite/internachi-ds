@@ -1,7 +1,7 @@
 .Progress {
     width: 100%;
     overflow: hidden;
-    @apply .bg-grey-light .h-1 .rounded-pill;
+    @apply .bg-grey-300 .h-1 .rounded-pill;
 }
 
 .Progress > div {
@@ -9,7 +9,7 @@
     transition-duration: 300ms;
     transition-timing-function: ease;
     height: 100%;
-    @apply .bg-grey;
+    @apply .bg-grey-500;
 }
 
 /* Sizes */
@@ -19,7 +19,7 @@
 }
 
 .Progress.size2 {
-    @apply .h-3;
+    @apply .h-2;
 }
 
 /* Colors */
@@ -28,8 +28,8 @@
     background-image:
        linear-gradient(
            to right,
-           config('colors.blue'),
-           config('colors.teal')
+           config('colors.blue-500'),
+           config('colors.green-400')
         );
     background-size: 100% 100%;
 }

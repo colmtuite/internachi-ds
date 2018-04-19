@@ -14,7 +14,7 @@
   transition-timing-function: ease;
   user-select: none;
   vertical-align: middle;
-  @apply .text-grey-dark .h-8 .w-8;
+  @apply .text-grey-600 .h-4 .w-4;
 }
 
 .IconButton:hover {
@@ -30,29 +30,33 @@
 /* Sizes */
 
 .IconButton.size1 {
-  @apply .h-4 .w-4;
+  @apply .h-2 .w-2;
 }
 
 .IconButton.size2 {
-  @apply .h-6 .w-6;
+  @apply .h-3 .w-3;
+}
+
+.IconButton.size3 {
+  @apply .h-4 .w-4;
 }
 
 /* Colors */
 
 .IconButton.blue:hover {
-  @apply .text-blue;
+  @apply .text-blue-500;
 }
 
 .IconButton.green:hover {
-  @apply .text-teal;
+  @apply .text-green-500;
 }
 
 .IconButton.yellow:hover {
-  @apply .text-yellow;
+  @apply .text-yellow-500;
 }
 
 .IconButton.red:hover {
-  @apply .text-red;
+  @apply .text-red-500;
 }
 
 /* Disabled state */

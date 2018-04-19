@@ -9,76 +9,76 @@
 /* Sizes */
 
 .Title.size1 {
-    @apply .text-1;
+    @apply .text-2;
 }
 
 .Title.size2 {
-    @apply .text-2;
+    @apply .text-3;
 }
 
 .Title.size3 {
     letter-spacing: -.02em;
-    @apply .text-6;
+    @apply .text-4;
 }
 
 /* Responsive sizes */
 
 @media only screen and (min-width: config('screens.sm')) {
   .Title.sm-size1 {
-      @apply .text-1;
+      @apply .text-2;
   }
 
   .Title.sm-size2 {
-      @apply .text-2;
+      @apply .text-3;
   }
 
   .Title.sm-size3 {
       letter-spacing: -.02em;
-      @apply .text-6;
+      @apply .text-5;
   }
 }
 
 @media only screen and (min-width: config('screens.md')) {
   .Title.md-size1 {
-      @apply .text-1;
+      @apply .text-2;
   }
 
   .Title.md-size2 {
-      @apply .text-2;
+      @apply .text-3;
   }
 
   .Title.md-size3 {
       letter-spacing: -.02em;
-      @apply .text-6;
+      @apply .text-5;
   }
 }
 
 @media only screen and (min-width: config('screens.lg')) {
   .Title.lg-size1 {
-      @apply .text-1;
+      @apply .text-2;
   }
 
   .Title.lg-size2 {
-      @apply .text-2;
+      @apply .text-3;
   }
 
   .Title.lg-size3 {
       letter-spacing: -.02em;
-      @apply .text-6;
+      @apply .text-5;
   }
 }
 
 @media only screen and (min-width: config('screens.xl')) {
   .Title.xl-size1 {
-      @apply .text-1;
+      @apply .text-2;
   }
 
   .Title.xl-size2 {
-      @apply .text-2;
+      @apply .text-3;
   }
 
   .Title.xl-size3 {
       letter-spacing: -.02em;
-      @apply .text-6;
+      @apply .text-5;
   }
 }

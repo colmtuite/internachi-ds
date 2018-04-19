@@ -1,0 +1,50 @@
+.ListItem {
+  border: none;
+  box-sizing: border-box;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  outline: none;
+  line-height: 1;
+  text-decoration: none;
+  width: 100%;
+  @apply .px-2 .py-1 .min-h-4;
+}
+
+/* Sizes */
+
+.ListItem.size2 {
+  @apply .min-h-5;
+}
+
+/* Props */
+
+.ListItem.rounded {
+  @apply .rounded-2;
+}
+
+/* Interactive */
+
+.ListItem.interactive {
+  cursor: pointer;
+  transition-property: all;
+  transition-duration: 100ms;
+  transition-timing-function: linear;
+}
+
+.ListItem.interactive:hover,
+.ListItem.interactive:focus {
+  @apply .bg-grey-200;
+}
+
+.ListItem.interactive:active {
+  @apply .bg-grey-300;
+}
+
+/* States */
+
+.ListItem.is-active,
+.ListItem.is-active:hover {
+  cursor: default;
+  @apply .bg-blue-500 .text-white;
+}

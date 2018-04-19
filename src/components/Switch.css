@@ -3,7 +3,7 @@
 .Switch {
     position: relative;
     display: inline-block;
-    @apply .w-8 h-2;
+    @apply .w-4 h-1;
 }
 
 .Switch input {
@@ -19,7 +19,7 @@
     bottom: 0;
     transition: all 100ms;
     border-radius: 9999px;
-    @apply .bg-grey;
+    @apply .bg-grey-500;
 }
 
 .Switch div:before {
@@ -30,16 +30,16 @@
     transition: all 100ms ease;
     border-radius: 50%;
     box-shadow: 0 4px 6px rgba(32,52,61,.05), 0 1px 3px rgba(0,0,0,.05);
-    @apply .w-4 .h-4 .bg-grey-dark;
+    @apply .w-2 .h-2 .bg-grey-600;
 }
 
 .Switch input:checked + div {
-    @apply .bg-blue-light;
+    @apply .bg-blue-400;
 }
 
 .Switch input:checked + div:before {
-    transform: translateX(config('width.4'));
-    @apply .bg-blue;
+    transform: translateX(config('width.2'));
+    @apply .bg-blue-500;
 }
 
 /* Disabled */
@@ -50,11 +50,11 @@
 
 .Switch.is-disabled div,
 .Switch.is-disabled input:checked + div {
-    @apply .bg-grey-light;
+    @apply .bg-grey-300;
 }
 
 .Switch.is-disabled div:before,
 .Switch.is-disabled input:checked + div:before {
-    @apply .bg-grey;
+    @apply .bg-grey-500;
     box-shadow: none;
 }

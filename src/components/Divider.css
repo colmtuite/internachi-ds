@@ -2,21 +2,21 @@
 
 .Divider {
     height: 2px;
-    @apply .w-10 .bg-grey-light;
+    @apply .w-5 .bg-grey-300;
 }
 
 /* Sizes */
 
 .Divider.size1 {
-    @apply .w-10;
+    @apply .w-5;
 }
 
 .Divider.size2 {
-    @apply .w-16;
+    @apply .w-7;
 }
 
 /* Variations */
 
 .Divider.vertical {
-    @apply .w-px .h-4;
+    @apply .w-px .h-2;
 }

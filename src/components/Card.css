@@ -1,6 +1,6 @@
 .Card {
     background-color: white;
-    border: 1px solid config('colors.grey-light');
+    border: 1px solid config('colors.grey-400');
     @apply .rounded-2;
 }
 
@@ -20,7 +20,7 @@
 }
 .Card.interactive:hover {
     box-shadow: 0 10px 25px rgba(0,0,0,.05);
-    border-color: config('colors.grey');
+    border-color: config('colors.grey-500');
 }
 .Card.interactive:active {
     box-shadow: 0 1px 3px rgba(0,0,0,.05);

@@ -18,21 +18,21 @@
     justify-content: center;
     border-width: 1px;
     border-style: solid;
-    border-color: config('colors.grey');
+    border-color: config('colors.grey-500');
     transition: all 100ms ease;
-    @apply .text-white .w-4 .h-4 .bg-white .rounded-1;
+    @apply .text-white .w-2 .h-2 .bg-white .rounded-1;
 }
 
 /* Hover state*/
 
 .Checkbox:hover > input ~ div {
-    border-color: config('colors.blue');
+    border-color: config('colors.blue-500');
 }
 
 /* Focus state*/
 
 .Checkbox input:focus ~ div {
-    outline: 1px dashed config('colors.blue');
+    outline: 1px dashed config('colors.blue-500');
     outline-offset: 1px;
 }
 
@@ -40,8 +40,8 @@
 /* Checked state */
 
 .Checkbox > input:checked ~ div {
-    border-color: config('colors.blue');
-    @apply .bg-blue;
+    border-color: config('colors.blue-500');
+    @apply .bg-blue-500;
 }
 
 .Checkbox > input:checked ~ div:after {

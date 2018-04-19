@@ -3,30 +3,36 @@
     cursor: pointer;
     display: inline-flex;
     justify-content: center;
-    text-transform: uppercase;
+    text-decoration: none;
     font-weight: 700;
     letter-spacing: .025em;
     text-align: center;
     transition: all 100ms ease;
     white-space: nowrap;
     border-radius: config('borderRadius.2') config('borderRadius.2') 0 0;
-    color: rgba(255,255,255,.7);
-    @apply .h-10 .text-2 .pl-2 .pr-2;
+    @apply .h-4 .text-2 .text-grey-600 .pl-2 .pr-2;
 }
 .BubbleTab:hover,
 .BubbleTab:active {
-    color: white;
+    @apply .text-blue-500;
 }
 .BubbleTab:focus {
-    outline: 1px dashed config('colors.white');
-    color: white;
+    outline: 1px dashed config('colors.blue');
+    @apply .text-blue-500;
 }
 
-/* Active state*/
+/* Sizes */
 
-.BubbleTab.is-active {
-    background-color: white;
-    color: inherit;
-    cursor: default;
-    outline: none;
+.BubbleTab.size1 {
+    @apply .h-4 .text-2 .pl-2 .pr-2;
+}
+
+.BubbleTab.size2 {
+    @apply .h-6 .text-3 .pl-2 .pr-2;
+}
+
+/* Colors */
+
+.BubbleTab.blue {
+    @apply .text-blue-500;
 }

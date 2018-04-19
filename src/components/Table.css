@@ -9,21 +9,21 @@
 
 .Table th,
 .Table td {
-    border-top: 1px solid config('colors.grey-lighter');
+    border-top: 1px solid config('colors.grey-300');
     @apply .p-2;
 }
 
 .Table th {
     font-weight: normal;
-    @apply .text-grey-dark;
+    @apply .text-grey-600;
 }
 
 .Table thead th {
     font-weight: normal;
     border-top: none;
-    border-bottom: 1px solid config('colors.grey-light');
+    border-bottom: 1px solid config('colors.grey-400');
 }
 
 .Table.striped tbody tr:nth-of-type(odd) {
-    @apply .bg-grey-lightest;
+    @apply .bg-grey-100;
 }

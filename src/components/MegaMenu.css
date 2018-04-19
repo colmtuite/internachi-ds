@@ -1,0 +1,23 @@
+/* Default */
+
+.MegaMenu {
+  position: fixed;
+  top: 96px;
+  left: 0;
+  border-top: 1px solid config('colors.grey-300');
+  background-color: white;
+  min-height: 100px;
+  box-shadow: 0 20px 20px rgba(0,0,0,.05);
+  z-index: 400;
+  width: 100%;
+  transition-property: transform;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(1,0,0,1);
+  transform: translateY(calc((100% + 96px) * -1));
+}
+
+/* Active state */
+
+.MegaMenu.is-active {
+  transform: translateY(0);
+}

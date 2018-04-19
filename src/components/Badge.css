@@ -11,17 +11,17 @@
   user-select: none;
   vertical-align: middle;
   cursor: default;
-  @apply .bg-grey-light .text-1 .h-4 .px-1 .text-grey-darker;
+  @apply .bg-grey-300 .text-1 .h-2 .px-1 .text-grey-700;
 }
 
 /* Sizes */
 
 .Badge.size1 {
-  @apply .text-1 .h-4 .px-1;
+  @apply .h-2 .text-1 .px-1;
 }
 
 .Badge.size2 {
-  @apply .h-6 .text-2 .px-2;
+  @apply .h-3 .text-2 .px-2;
 }
 
 /* Responsive sizes */
@@ -69,17 +69,17 @@
 /* Colors */
 
 .Badge.blue {
-  @apply .bg-blue-lighter .text-blue-darker;
+  @apply .bg-blue-300 .text-blue-800;
 }
 
 .Badge.red {
-  @apply .bg-red-lighter .text-red-darker;
+  @apply .bg-red-300 .text-red-800;
 }
 
 .Badge.green {
-  @apply .bg-teal-lighter .text-teal-darker;
+  @apply .bg-green-300 .text-green-800;
 }
 
 .Badge.yellow {
-  @apply .bg-yellow-lighter .text-yellow-darker;
+  @apply .bg-yellow-300 .text-yellow-800;
 }
