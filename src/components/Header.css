@@ -7,7 +7,7 @@
     width: 100%;
     color: white;
     box-shadow: 0 4px 8px rgba(0,0,0,.05);
-    @apply .bg-blue-500 .z-500;
+    @apply .bg-blue-5 .z-5;
 }
 
 /* Variations */

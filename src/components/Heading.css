@@ -38,7 +38,7 @@
 .Heading.size6 {
   letter-spacing: -.04em;
   margin-left: -.2rem;
-  @apply .text-10;
+  @apply .text-9;
 }
 
 /* Responsive sizes */
@@ -76,7 +76,7 @@
   .Heading.sm-size6 {
     letter-spacing: -.04em;
     margin-left: -.2rem;
-    @apply .text-10;
+    @apply .text-9;
   }
 }
 
@@ -113,7 +113,7 @@
   .Heading.md-size6 {
     letter-spacing: -.04em;
     margin-left: -.2rem;
-    @apply .text-10;
+    @apply .text-9;
   }
 }
 
@@ -150,7 +150,7 @@
   .Heading.lg-size6 {
     letter-spacing: -.04em;
     margin-left: -.2rem;
-    @apply .text-10;
+    @apply .text-9;
   }
 }
 
@@ -187,6 +187,6 @@
   .Heading.xl-size6 {
     letter-spacing: -.04em;
     margin-left: -.2rem;
-    @apply .text-10;
+    @apply .text-9;
   }
 }

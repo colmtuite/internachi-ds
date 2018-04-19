@@ -2,9 +2,9 @@
 
 .avatar {
   @apply .inline-flex .justify-center .items-center .overflow-hidden .shadow-inner;
-  @apply .w-4 .h-4 .rounded-round .bg-grey-100;
+  @apply .w-4 .h-4 .rounded-full .bg-grey-1;
   @apply .cursor-default .select-none;
-  @apply .uppercase .text-grey-600 .text-6;
+  @apply .uppercase .text-grey-6 .text-6;
 }
 
 @responsive {

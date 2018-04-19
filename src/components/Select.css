@@ -2,13 +2,13 @@
 
 .Select {
     width: 100%;
-    @apply .h-4 .bg-grey-300 .text-3;
+    @apply .h-4 .bg-grey-3 .text-3;
 }
 
 .Select:focus {
     outline-width: 1px;
     outline-style: dashed;
-    outline-color: config('colors.blue-500');
+    outline-color: config('colors.blue-5');
     outline-offset: 2px;
 }
 

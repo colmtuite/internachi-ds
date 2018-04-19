@@ -2,7 +2,7 @@
 
 .Divider {
     height: 2px;
-    @apply .w-5 .bg-grey-300;
+    @apply .w-5 .bg-grey-3;
 }
 
 /* Sizes */

@@ -19,7 +19,7 @@
     bottom: 0;
     transition: all 100ms;
     border-radius: 9999px;
-    @apply .bg-grey-500;
+    @apply .bg-grey-5;
 }
 
 .Switch div:before {
@@ -30,16 +30,16 @@
     transition: all 100ms ease;
     border-radius: 50%;
     box-shadow: 0 4px 6px rgba(32,52,61,.05), 0 1px 3px rgba(0,0,0,.05);
-    @apply .w-2 .h-2 .bg-grey-600;
+    @apply .w-2 .h-2 .bg-grey-6;
 }
 
 .Switch input:checked + div {
-    @apply .bg-blue-400;
+    @apply .bg-blue-4;
 }
 
 .Switch input:checked + div:before {
     transform: translateX(config('width.2'));
-    @apply .bg-blue-500;
+    @apply .bg-blue-5;
 }
 
 /* Disabled */
@@ -50,11 +50,11 @@
 
 .Switch.is-disabled div,
 .Switch.is-disabled input:checked + div {
-    @apply .bg-grey-300;
+    @apply .bg-grey-3;
 }
 
 .Switch.is-disabled div:before,
 .Switch.is-disabled input:checked + div:before {
-    @apply .bg-grey-500;
+    @apply .bg-grey-5;
     box-shadow: none;
 }

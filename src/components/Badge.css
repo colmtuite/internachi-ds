@@ -11,7 +11,7 @@
   user-select: none;
   vertical-align: middle;
   cursor: default;
-  @apply .bg-grey-300 .text-1 .h-2 .px-1 .text-grey-700;
+  @apply .bg-grey-3 .text-1 .h-2 .px-1 .text-grey-7;
 }
 
 /* Sizes */
@@ -69,17 +69,17 @@
 /* Colors */
 
 .Badge.blue {
-  @apply .bg-blue-300 .text-blue-800;
+  @apply .bg-blue-3 .text-blue-8;
 }
 
 .Badge.red {
-  @apply .bg-red-300 .text-red-800;
+  @apply .bg-red-3 .text-red-8;
 }
 
 .Badge.green {
-  @apply .bg-green-300 .text-green-800;
+  @apply .bg-green-3 .text-green-8;
 }
 
 .Badge.yellow {
-  @apply .bg-yellow-300 .text-yellow-800;
+  @apply .bg-yellow-3 .text-yellow-8;
 }

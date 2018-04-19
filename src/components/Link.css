@@ -10,7 +10,7 @@
     transition-timing-function: linear;
 }
 .Link:focus {
-    outline: 1px dashed config('colors.blue-500');
+    outline: 1px dashed config('colors.blue-5');
     outline-offset: 1px;
 }
 
@@ -18,24 +18,24 @@
 
 .Link.blue {
     text-decoration: none;
-    @apply .text-blue-500;
+    @apply .text-blue-5;
 }
 .Link.blue:hover {
-    @apply .text-blue-600;
+    @apply .text-blue-6;
 }
 
 .Link.red {
     text-decoration: none;
-    @apply .text-red-500;
+    @apply .text-red-5;
 }
 .Link.red:hover {
-    @apply .text-red-600;
+    @apply .text-red-6;
 }
 
 .Link.green {
     text-decoration: none;
-    @apply .text-green-500;
+    @apply .text-green-5;
 }
 .Link.green:hover {
-    @apply .text-green-600;
+    @apply .text-green-6;
 }

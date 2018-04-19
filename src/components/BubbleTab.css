@@ -10,15 +10,15 @@
     transition: all 100ms ease;
     white-space: nowrap;
     border-radius: config('borderRadius.2') config('borderRadius.2') 0 0;
-    @apply .h-4 .text-2 .text-grey-600 .pl-2 .pr-2;
+    @apply .h-4 .text-2 .text-grey-6 .pl-2 .pr-2;
 }
 .BubbleTab:hover,
 .BubbleTab:active {
-    @apply .text-blue-500;
+    @apply .text-blue-5;
 }
 .BubbleTab:focus {
     outline: 1px dashed config('colors.blue');
-    @apply .text-blue-500;
+    @apply .text-blue-5;
 }
 
 /* Sizes */
@@ -34,5 +34,5 @@
 /* Colors */
 
 .BubbleTab.blue {
-    @apply .text-blue-500;
+    @apply .text-blue-5;
 }

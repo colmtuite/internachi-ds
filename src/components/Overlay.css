@@ -10,7 +10,7 @@
     transition-property: opacity;
     transition-duration: 100ms;
     transition-timing-function: linear;
-    @apply .z-700;
+    @apply .z-7;
 }
 
 .Overlay.is-active {

@@ -3,7 +3,7 @@
 .Input {
     border: none;
     outline: none;
-    box-shadow: inset 0 0 0 1px config('colors.grey-500');
+    box-shadow: inset 0 0 0 1px config('colors.grey-5');
     width: 100%;
     transition-property: box-shadow, background-color;
     transition-duration: 100ms;
@@ -11,27 +11,27 @@
     font-family: inherit;
     color: inherit;
     line-height: config('height.4');
-    @apply .h-4 .pl-1 .bg-white .text-3 .rounded-2;
+    @apply .h-4 .pl-1 .bg-white .text-3 .rounded;
 }
 
 /* Focus state */
 
 .Input:focus {
-    box-shadow: inset 0 0 0 1px config('colors.blue-500');
+    box-shadow: inset 0 0 0 1px config('colors.blue-5');
 }
 
 /* Placeholder */
 
 .Input::-webkit-input-placeholder {
-   color: config('colors.grey-500');
+   color: config('colors.grey-5');
    opacity:  1;
 }
 .Input::-moz-placeholder {
-   color: config('colors.grey-500');
+   color: config('colors.grey-5');
    opacity:  1;
 }
 .Input:-ms-input-placeholder {
-   color: config('colors.grey-500');
+   color: config('colors.grey-5');
    opacity:  1;
 }
 
@@ -74,9 +74,9 @@
 /* Validation */
 
 .Input.is-valid {
-    box-shadow: inset 0 0 0 1px config('colors.green-500');
+    box-shadow: inset 0 0 0 1px config('colors.green-5');
 }
 
 .Input.is-invalid {
-    box-shadow: inset 0 0 0 1px config('colors.red-500');
+    box-shadow: inset 0 0 0 1px config('colors.red-5');
 }
