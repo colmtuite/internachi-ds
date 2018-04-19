@@ -1,15 +1,15 @@
 @tailwind preflight;
 
-body {
+.autostyle {
 	@apply .font-sans .text-black;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+.autostyle h1,
+.autostyle h2,
+.autostyle h3,
+.autostyle h4,
+.autostyle h5,
+.autostyle h6 {
 	@apply .font-brand;
 }
 
