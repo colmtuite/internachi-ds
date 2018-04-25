@@ -765,10 +765,10 @@ button,
   height: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
-  color: hsl(219, 12%, 50%);
+  color: hsl(219, 20%, 13%);
 }
 
-.Button::before {
+/* .Button::before {
   content: "";
   position: absolute;
   top: 0;
@@ -776,8 +776,12 @@ button,
   right: 8px;
   height: 100%;
   border-radius: 4px;
-  box-shadow: 0 4px 0 0 hsl(219, 22%, 93%);
+  box-shadow: 0 4px 0 0px config('colors.grey-300');
   z-index: -1;
+} */
+
+.Button:hover {
+  box-shadow: inset 0 0 0 1px hsl(219, 16%, 76%);
 }
 
 /* Size */
@@ -797,7 +801,7 @@ button,
 }
 
 .Button.size3 {
-  height: 2.5rem;
+  height: 3rem;
   font-size: 1.125rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
@@ -902,13 +906,16 @@ button,
 .Button.white {
   box-shadow: none;
   background-color: hsl(0, 0%, 100%);
-  color: hsl(0, 0%, 100%);
 }
 
 .Button.blue {
   box-shadow: none;
   background-color: hsl(219, 84%, 56%);
   color: hsl(0, 0%, 100%);
+}
+
+.Button.blue:hover {
+  background-color: hsl(219, 82%, 45%);
 }
 
 .Button.green {
@@ -921,6 +928,15 @@ button,
   box-shadow: none;
   background-color: hsl(0, 100%, 65%);
   color: hsl(0, 0%, 100%);
+}
+
+/* States */
+
+.Button.is-disabled {
+  box-shadow: none;
+  pointer-events: none;
+  background-color: hsl(219, 22%, 93%);
+  color: hsl(219, 16%, 76%);
 }
 
 /* Default styles */
@@ -1991,6 +2007,7 @@ button,
 
 .Progress {
   width: 100%;
+  min-width: 48px;
   overflow: hidden;
   background-color: hsl(219, 22%, 93%);
   height: .5rem;
@@ -2017,8 +2034,18 @@ button,
 
 /* Colors */
 
+.Progress.red > div {
+  background-image: linear-gradient(to right, hsl(0, 100%, 45%), hsl(0, 100%, 65%));
+  background-size: 100% 100%;
+}
+
+.Progress.yellow > div {
+  background-image: linear-gradient(to right, hsl(40, 90%, 42%), hsl(40, 90%, 50%));
+  background-size: 100% 100%;
+}
+
 .Progress.green > div {
-  background-image: linear-gradient(to right, hsl(219, 84%, 56%), hsl(134, 40%, 64%));
+  background-image: linear-gradient(to right, hsl(134, 52%, 40%), hsl(134, 58%, 42%));
   background-size: 100% 100%;
 }
 
@@ -2095,10 +2122,6 @@ button,
 .Radio {
   position: relative;
   cursor: pointer;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -ms-flex-align: center;
-      align-items: center;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -2136,10 +2159,10 @@ button,
 
 /* Focus state */
 
-.Radio input:focus ~ div {
-  outline: 1px dashed hsl(219, 84%, 56%);
+/* .Radio input:focus ~ div {
+  outline: 1px dashed config('colors.blue-500');
   outline-offset: 1px;
-}
+} */
 
 /* Checked state */
 
@@ -2151,6 +2174,17 @@ button,
 
 .Radio input ~ div {
   border-radius: 50%;
+}
+
+/* Sizes */
+
+.Radio.size2 > input ~ div {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.Radio.size2 > input:checked ~ div {
+  box-shadow: inset 0 0 0 6px hsl(219, 84%, 56%);
 }
 
 /* Default */

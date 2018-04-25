@@ -24,10 +24,10 @@
   border-radius: 4px;
   z-index: 0;
   font-family: 'Oswald', sans-serif;
-  @apply .bg-white .text-3 .h-4 .px-2 .text-grey-600;
+  @apply .bg-white .text-3 .h-4 .px-2 .text-grey-800;
 }
 
-.Button::before {
+/* .Button::before {
   content: "";
   position: absolute;
   top: 0;
@@ -37,6 +37,10 @@
   border-radius: 4px;
   box-shadow: 0 4px 0 0px config('colors.grey-300');
   z-index: -1;
+} */
+
+.Button:hover {
+  box-shadow: inset 0 0 0 1px config('colors.grey-500');
 }
 
 /* Size */
@@ -50,7 +54,7 @@
 }
 
 .Button.size3 {
-  @apply .h-5 .text-5 .px-3;
+  @apply .h-6 .text-5 .px-3;
 }
 
 /* Responsive sizes */
@@ -115,12 +119,15 @@
 
 .Button.white {
   box-shadow: none;
-  @apply .bg-white .text-white;
+  @apply .bg-white;
 }
 
 .Button.blue {
   box-shadow: none;
   @apply .bg-blue-500 .text-white;
+}
+.Button.blue:hover {
+  @apply .bg-blue-600;
 }
 
 .Button.green {
@@ -131,4 +138,12 @@
 .Button.red {
   box-shadow: none;
   @apply .bg-red-500 .text-white;
+}
+
+/* States */
+
+.Button.is-disabled {
+  box-shadow: none;
+  pointer-events: none;
+  @apply .bg-grey-300 .text-grey-500;
 }

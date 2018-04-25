@@ -1,5 +1,6 @@
 .Progress {
     width: 100%;
+    min-width: 48px;
     overflow: hidden;
     @apply .bg-grey-300 .h-1 .rounded-pill;
 }
@@ -24,12 +25,32 @@
 
 /* Colors */
 
+.Progress.red > div {
+    background-image:
+       linear-gradient(
+           to right,
+           config('colors.red-600'),
+           config('colors.red-500')
+        );
+    background-size: 100% 100%;
+}
+
+.Progress.yellow > div {
+    background-image:
+       linear-gradient(
+           to right,
+           config('colors.yellow-600'),
+           config('colors.yellow-500')
+        );
+    background-size: 100% 100%;
+}
+
 .Progress.green > div {
     background-image:
        linear-gradient(
            to right,
-           config('colors.blue-500'),
-           config('colors.green-400')
+           config('colors.green-600'),
+           config('colors.green-500')
         );
     background-size: 100% 100%;
 }
